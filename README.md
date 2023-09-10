@@ -1,5 +1,5 @@
 # 🏆 Portfolio
-- It dont have any thing special, its just my new portfolio
+- There's nothing special, it's just my new portfolio
 - The designe is based on OS Linux terminals, simple and beautiful
 - It's full open source, feel free to modify, if you want to deploy or post it contact me first please 
 - Technologies used in this project:
