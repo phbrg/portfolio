@@ -10,6 +10,4 @@
 
 # 💻 Project Showcase
 
-[Deploy link](https://phpedro.vercel.app)
-
 <img src="https://media.discordapp.net/attachments/1121210969352310966/1150534759282393098/image.png?width=984&height=191">
