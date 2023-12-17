@@ -1,0 +1,95 @@
+.Card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 25vh;
+  background-color: #1c1c1c;
+  border: 1px solid rgb(50, 50, 50);
+  border-radius: 5px;
+  padding: 2vh 2vw;
+  gap: 2vh;
+}
+
+.Card:hover {
+  transform: scale(1.02);
+  background-color: #000000;
+  border: 1px solid rgb(46, 46, 46);
+}
+
+.Card h1 {
+  font-size: 1.4vw;
+  font-weight: 500;
+}
+
+.Card h2 {
+  font-size: 1vw;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.Card .row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0 1vw;
+}
+
+.Card .skill {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1vw;
+  font-weight: 600;
+  padding: 0.6vh 0.8vw;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  color: #000;
+}
+
+.Card .skill i {
+  font-size: 1.29vw;
+  padding-right: 0.5vw;
+  color: #000;
+}
+
+.Card .link {
+  font-size: 1.05vw;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.Card .link:hover {
+  color: rgb(0, 128, 255);
+}
+
+@media screen and (max-width: 768px) {
+  body .Card {
+    min-height: 10vh;
+    padding: 1vh 4vw;
+    gap: 1vh;
+  }
+  body .Card h1 {
+    font-size: 1.29vh;
+  }
+  body .Card h2 {
+    font-size: 0.9vh;
+  }
+  body .Card .row {
+    gap: 0 3vw;
+  }
+  body .Card .skill {
+    font-size: 0.9vh;
+    padding: 0.4vh 2vw;
+  }
+  body .Card .skill i {
+    font-size: 1.29vh;
+    padding-right: 2vw;
+  }
+  body .Card .link {
+    font-size: 1vh;
+  }
+}
