@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 40vh;
+  min-height: 40vh;
   width: 65%;
   padding: 1vh 1vw;
   gap: 1.5vh;
@@ -21,11 +21,11 @@
   justify-content: space-around;
   flex-direction: column;
   width: 100%;
-  height: 100%;
   background-color: #1c1c1c;
   border: 1px solid rgb(50, 50, 50);
   border-radius: 5px;
-  padding: 1vh 1vw;
+  padding: 2vh 1vw;
+  gap: 1vh 0;
 }
 
 .About .card code {
@@ -47,17 +47,23 @@
 }
 
 .About .card p {
-  font-size: 1vw;
+  font-size: 0.95vw;
   color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.8px;
 }
 
 .About .card p span {
-  font-weight: 600;
+  font-weight: 500;
+  font-family: Fira code;
+}
+
+.About .card p span:hover {
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.4));
 }
 
 @media screen and (max-width: 768px) {
   body .About {
-    height: 19vh;
+    min-height: 19vh;
     min-height: 10vh;
     width: 100%;
   }
@@ -65,12 +71,14 @@
     font-size: 1.4vh;
   }
   body .About .card {
-    padding: 0.2vh 2vw;
+    padding: 1vh 2vw;
+    width: 96%;
   }
   body .About .card code {
     font-size: 1.2vh;
   }
   body .About .card p {
-    font-size: 0.6vh;
+    font-size: 1vh;
+    font-weight: 400;
   }
 }

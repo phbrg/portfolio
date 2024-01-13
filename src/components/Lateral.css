@@ -57,12 +57,14 @@
 }
 
 .Lateral .about-me span {
-  font-weight: 600;
+  font-weight: 400;
+  font-size: 0.88vw;
   filter: drop-shadow(0 0 5px transparent);
+  font-family: Fira code;
 }
 
 .Lateral .about-me span:hover {
-  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.4));
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.6));
 } 
 
 .Lateral .social {
@@ -72,6 +74,7 @@
 .Lateral .social h1 {
   font-size: 1.1vw;
   font-weight: 400;
+  padding: 1vh 0;
 }
 
 .Lateral .social div {
@@ -124,6 +127,9 @@
     font-size: 1.4vh;
   }
   body .Lateral .about-me {
+    font-size: 1vh;
+  }
+  body .Lateral .about-me span {
     font-size: 1.1vh;
   }
   body .Lateral .social h1 {
