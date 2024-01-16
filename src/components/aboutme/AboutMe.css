@@ -1,0 +1,64 @@
+.About {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: auto;
+  width: 100%;
+}
+
+.About .presentation {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3vh 1.5vw;
+  gap: 2vh 0;
+  border-bottom: 1px solid rgb(50, 50, 50);
+}
+
+.About .presentation li {
+  font-family: JetBrains mono;
+  font-size: 1.2vw;
+  font-weight: 600;
+}
+
+.About .presentation li::marker {
+  color: rgb(80, 80, 80);
+  padding: 0;
+}
+
+.About .presentation p {
+  font-size: 1vw;
+  color: rgb(160, 160, 160);
+}
+
+.About .presentation p span {
+  font-family: JetBrains mono;
+  font-size: 0.95vw;
+  font-weight: 600;
+  color: rgb(160, 160, 160);
+}
+
+.About .presentation:hover p {
+  color: #fff;
+}
+
+.About .presentation:hover p * {
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 768px) {
+  .About .presentation li {
+    font-size: 1.1vh;
+  }
+  .About .presentation p {
+    font-size: 1vh;
+    color: #fff;
+  }
+  .About .presentation p span {
+    font-size: 0.95vh;
+    color: #fff;
+  }
+}

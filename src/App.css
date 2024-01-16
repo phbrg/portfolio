@@ -1,34 +1,20 @@
 .App {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
-  width: 100%;
-  min-height: 100vh;
-}
-
-.App .content {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  align-items: center;
+  justify-content: start;
   flex-direction: column;
-  width: 100%;
+  flex-wrap: wrap;
+  width: 55vw;
   min-height: 100vh;
+  padding: 3vh 0;
+  gap: 3vh 0 ;
 }
 
 @media screen and (max-width: 768px) {
-  body .App {
+  .App {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
+    justify-content: center;
+    width: 90vw;
     min-height: 100vh;
-  }
-  body .App .content {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-direction: column;
-    min-height: 55vh;
   }
 }

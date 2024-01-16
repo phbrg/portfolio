@@ -1,0 +1,21 @@
+.Projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: auto;
+  gap: 2vh;
+}
+
+.Projects .project-title {
+  width: 100%;
+  font-size: 2vw;
+}
+
+@media screen and (max-width: 768px) {
+  .Projects .project-title {
+    font-size: 2vh;
+  }
+}

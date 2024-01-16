@@ -1,0 +1,81 @@
+.List {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 3vh 1.5vw;
+  gap: 1.5vh 0;
+  border-bottom: 1px solid rgb(50, 50, 50);
+}
+
+.List h1 {
+  font-size: 2vw;
+}
+
+.List ul {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 25vh;
+}
+
+.List ul li {
+  font-size: 1.1vw;
+  padding: 0.5vh 0;
+  min-width: 100%;
+  color: rgb(100, 100, 100);
+}
+
+.List ul li p {
+  font-size: 1.1vw;
+  color: rgb(100, 100, 100);
+} 
+
+.List ul li p a {
+  font-size: 1.1vw;
+  color: rgb(100, 100, 100);
+  text-decoration: underline transparent;
+}
+
+.List ul li::marker{
+  color: rgb(80, 80, 80);
+}
+
+.List:hover ul li {
+  color: #fff;
+}
+
+.List:hover ul li p {
+  color: rgb(200, 200, 200);
+}
+
+.List:hover ul li p a {
+  color: rgb(255, 255, 255);
+}
+
+.List ul li p a:hover {
+  color: rgb(0, 136, 255);
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .List h1 {
+    font-size: 2vh;
+  }
+  .List ul li {
+    font-size: 1.2vh;
+    color: #fff;
+  }
+  .List ul li p {
+    font-size: 1vh;
+    color: #fff;
+  }
+  .List ul li p a {
+    font-size: 1vh;
+    color: rgb(255, 255, 255);
+  }
+}

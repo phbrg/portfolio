@@ -1,0 +1,29 @@
+.Nav {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  gap: 0 1vw;
+}
+
+.active {
+  cursor: default;
+  color: rgb(120, 120, 120);
+}
+
+.inactive {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .Nav {
+    gap: 0 3vw;
+  }
+  .Nav .active, .inactive {
+    font-size: 1vh;
+  }
+}

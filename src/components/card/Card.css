@@ -1,0 +1,84 @@
+.Card {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 98%;
+  height: auto;
+  padding: 1vw 1.5vw;
+  border-radius: 7px;
+  background-color: rgb(22, 22, 22);
+  border: 1px solid rgb(45, 45, 45);
+  gap: 1.5vh;
+}
+
+.Card:hover {
+  transform: scale(1.016);
+  background-color: black;
+}
+
+.Card h1 {
+  font-size: 1.6vw;
+  font-weight: 700;
+}
+
+.Card h2 {
+  font-size: 1vw;
+  font-weight: 400;
+  color: rgb(180, 180, 180);
+}
+
+.Card .techs {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 0 1vw;
+}
+
+.Card .techs p {
+  color: #000;
+  font-family: JetBrains mono;
+  font-size: 1vw;
+  font-weight: 800;
+  background-color: white;
+  padding: 0.4vh 1vw;
+  border-radius: 3px;
+}
+
+.Card a {
+  font-size: 1.1vw;
+  text-decoration: underline transparent;
+}
+
+.Card a:hover {
+  color: rgb(0, 136, 255);
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .Card {
+    width: 100%;
+    padding: 1vh 3vw;
+    gap: 1vh;
+  }
+  .Card h1 {
+    font-size: 1.4vh;
+  }
+  .Card h2 {
+    font-size: 0.8vh;
+  }
+  .Card .techs {
+    gap: 0 3vw;
+  }
+  .Card .techs p {
+    padding: 0.2vh 2vw;
+    font-size: 0.8vh;
+  }
+  .Card a {
+    font-size: 1vh;
+  }
+}
