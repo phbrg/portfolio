@@ -1,8 +1,18 @@
-# React + Vite
+# Personal portfolio
+> This project is bootstraped by Vite with:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<code>npm create vite@latest</code>
 
-Currently, two official plugins are available:
+## Deploy
+You can acess this project [here](https://phbrg.vercel.app)
+> This project is uploaded on vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project scripts
+<code>npm run dev</code>
+Runs the app in the development mode.
+
+<code>npm run build</code>
+Builds the app for production.
+
+## License
+This project is covered by [MIT](LICENSE). See the file [LICENSE](LICENSE) for more details.
