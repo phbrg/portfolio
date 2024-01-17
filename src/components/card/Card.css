@@ -49,15 +49,29 @@
   border-radius: 3px;
 }
 
+.Card .links {
+  display: flex;
+  gap: 0 1vw;
+}
+
 .Card a {
   font-size: 1.1vw;
-  text-decoration: underline transparent;
+  border-bottom: 1px solid transparent;
 }
 
 .Card a:hover {
   color: rgb(0, 136, 255);
-  text-decoration: underline;
+  border-bottom: 1px solid rgb(0, 136, 255);
 }
+
+.Card a i {
+  font-size: 0.9vw;
+}
+
+.Card a:hover i {
+  color: rgb(0, 136, 255);
+}
+
 
 @media screen and (max-width: 768px) {
   .Card {
@@ -78,7 +92,13 @@
     padding: 0.2vh 2vw;
     font-size: 0.8vh;
   }
+  .Card .links {
+    gap: 0 4vw;
+  }
   .Card a {
     font-size: 1vh;
+  }
+  .Card a i {
+    font-size: 0.8vh;
   }
 }

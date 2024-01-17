@@ -23,7 +23,7 @@
   .Nav {
     gap: 0 3vw;
   }
-  .Nav .active, .inactive {
+  .active, .inactive {
     font-size: 1vh;
   }
 }

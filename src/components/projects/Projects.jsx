@@ -23,6 +23,7 @@ const Projects = () => {
         description='- Guess the word by letters game made with react.js, my first React.js project.' 
         techs={['React.js']} 
         source='https://github.com/phbrg/wordle-react'
+        deploy='https://ph-wordle.vercel.app/'
       />
       <Card 
         name='Arkadius' 
@@ -36,6 +37,7 @@ const Projects = () => {
         techs={['Node.js', 'Handlebars', 'PostgreSQL']} 
         source='https://github.com/phbrg/cashflow'
       />
+      <h2 className='project-subtitle'>You can find more of my projects <a href="https://github.com/phbrg?tab=repositories" target='_blank'>here</a></h2>
     </div>
   )
 }

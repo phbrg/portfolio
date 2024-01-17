@@ -14,8 +14,25 @@
   font-size: 2vw;
 }
 
+.Projects .project-subtitle {
+  font-size: 1.2vw;
+  font-weight: 400;
+}
+
+.Projects .project-subtitle a {
+  text-decoration: underline transparent;
+  color: rgb(0, 136, 255);
+}
+
+.Projects .project-subtitle a:hover {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 768px) {
   .Projects .project-title {
     font-size: 2vh;
+  }
+  .Projects .project-subtitle {
+    font-size: 1.2vh;
   }
 }

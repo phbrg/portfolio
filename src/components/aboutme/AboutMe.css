@@ -49,6 +49,10 @@
   color: rgb(255, 255, 255);
 }
 
+.About .presentation:hover li::marker {
+  color: rgb(0, 136, 255);
+}
+
 @media screen and (max-width: 768px) {
   .About .presentation li {
     font-size: 1.1vh;

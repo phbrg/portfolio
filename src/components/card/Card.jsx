@@ -12,7 +12,12 @@ const Card = ({ name, description, techs, source, deploy = null }) => {
           ))
         }
       </div>
-      <a href={source} target='_blank'>View source code</a>
+      <div className="links">
+        <a href={source} target='_blank'>View source code <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        {
+          deploy && <a href={deploy} target='_blank'>View deploy <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        }
+      </div>
     </div>
   )
 }
