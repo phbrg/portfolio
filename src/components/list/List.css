@@ -27,17 +27,17 @@
   font-size: 1.1vw;
   padding: 0.5vh 0;
   min-width: 100%;
-  color: rgb(100, 100, 100);
+  color: rgb(180, 180, 180);
 }
 
 .List ul li p {
   font-size: 1.1vw;
-  color: rgb(100, 100, 100);
+  color: rgb(180, 180, 180);
 } 
 
 .List ul li p a {
   font-size: 1.1vw;
-  color: rgb(100, 100, 100);
+  color: rgb(180, 180, 180);
   text-decoration: underline transparent;
 }
 
@@ -45,21 +45,25 @@
   color: rgb(80, 80, 80);
 }
 
-.List:hover ul li {
-  color: #fff;
-}
-
-.List:hover ul li p {
-  color: rgb(200, 200, 200);
-}
-
-.List:hover ul li p a {
-  color: rgb(255, 255, 255);
-}
-
 .List ul li p a:hover {
   color: rgb(0, 136, 255);
   text-decoration: underline;
+}
+
+.List .list-active {
+  color: #fff;
+}
+
+.List .list-active p {
+  color: #fff;
+}
+
+.List .list-active a {
+  color: #fff;
+}
+
+.List .list-active::marker {
+  color: rgb(0, 136, 255);
 }
 
 @media screen and (max-width: 768px) {
@@ -70,12 +74,16 @@
     font-size: 1.2vh;
     color: #fff;
   }
+  .List ul li::marker {
+    color: rgb(0, 136, 255);
+  }
   .List ul li p {
     font-size: 1vh;
     color: #fff;
   }
   .List ul li p a {
     font-size: 1vh;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 136, 255);
+    text-decoration: underline;
   }
 }

@@ -18,15 +18,32 @@
   border-bottom: 1px solid rgb(50, 50, 50);
 }
 
-.About .presentation li {
+.About .presentation h1 {
   font-family: JetBrains mono;
   font-size: 1.2vw;
   font-weight: 600;
 }
 
-.About .presentation li::marker {
-  color: rgb(80, 80, 80);
-  padding: 0;
+.About .presentation h1 .blue {
+  color: rgb(89, 150, 255);
+}
+
+.About .presentation h1 .purple {
+  color: rgb(162, 108, 255);
+}
+
+.About .presentation h1 .yellow {
+  color: rgb(255, 223, 108);
+}
+
+.About .presentation h1 .green {
+  color: rgb(113, 255, 108);
+}
+
+.About .presentation h1 span {
+  font-family: JetBrains mono;
+  font-size: 1.2vw;
+  font-weight: 600;
 }
 
 .About .presentation p {
@@ -41,21 +58,35 @@
   color: rgb(160, 160, 160);
 }
 
-.About .presentation:hover p {
+.About .presentation .p-active {
   color: #fff;
 }
 
-.About .presentation:hover p * {
-  color: rgb(255, 255, 255);
-}
-
-.About .presentation:hover li::marker {
-  color: rgb(0, 136, 255);
+.About .presentation p .span-active {
+  color: rgb(44, 156, 255);
 }
 
 @media screen and (max-width: 768px) {
-  .About .presentation li {
+  .About .presentation h1 {
     font-size: 1.1vh;
+  }
+  .About .presentation h1 span {
+    font-size: 1.1vh;
+  }
+  .About .presentation h1 .first {
+    color: rgb(89, 150, 255);
+  }
+  .About .presentation h1 .second {
+    color: rgb(162, 108, 255);
+  }
+  .About .presentation h1 .third {
+    color: rgb(255, 223, 108);
+  }
+  .About .presentation h1 .fourth {
+    color: rgb(113, 255, 108);
+  }
+  .About .presentation h1 .fifth {
+    color: rgb(255, 223, 108);
   }
   .About .presentation p {
     font-size: 1vh;
@@ -63,6 +94,6 @@
   }
   .About .presentation p span {
     font-size: 0.95vh;
-    color: #fff;
+    color: rgb(44, 156, 255);
   }
 }

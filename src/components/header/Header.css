@@ -13,18 +13,18 @@
 }
 
 .Header h1 span {
-  color: rgb(120, 120, 120);
+  color: rgb(0, 136, 255);
 }
 
 .Header h2 {
-  font-size: 1.29vw;
-  font-weight: 500;
+  font-size: 1.2vw;
+  font-weight: 400;
   font-family: JetBrains mono;
-  color: rgb(180, 180, 180);
+  color: rgb(220, 220, 220);
 }
 
 .Header h2 span {
-  color: rgb(120, 120, 120);
+  color: rgb(0, 136, 255);
 }
 
 @media screen and (max-width: 768px) {

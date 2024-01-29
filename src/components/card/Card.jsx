@@ -2,7 +2,7 @@ import './Card.css'
 
 const Card = ({ name, description, techs, source, deploy = null }) => {
   return (
-    <div className='Card'>
+    <a target='_blank' href={source} className='Card'>
       <h1>{name}</h1>
       <h2>{description}</h2>
       <div className="techs">
@@ -12,13 +12,7 @@ const Card = ({ name, description, techs, source, deploy = null }) => {
           ))
         }
       </div>
-      <div className="links">
-        <a href={source} target='_blank'>View source code <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        {
-          deploy && <a href={deploy} target='_blank'>View deploy <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        }
-      </div>
-    </div>
+    </a>
   )
 }
 

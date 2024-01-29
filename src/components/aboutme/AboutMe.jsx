@@ -3,11 +3,39 @@ import './AboutMe.css'
 import List from '../list/List'
 
 const AboutMe = () => {
+  
+  const handleHover = () => {
+    const isActive = document.querySelector('.p-active') || null;
+
+    if(!isActive) {
+      const blue = document.querySelector('.first');
+      const purple = document.querySelector('.second');
+      const yellow1 = document.querySelector('.third');
+      const green = document.querySelector('.fourth');
+      const yellow2 = document.querySelector('.fifth');
+
+      const paragraph = document.querySelector('.p-before');
+      const spanElements = paragraph.children;
+
+      blue.setAttribute('class', 'blue');
+      purple.setAttribute('class', 'purple');
+      yellow1.setAttribute('class', 'yellow');
+      yellow2.setAttribute('class', 'yellow');
+      green.setAttribute('class', 'green');
+
+      paragraph.setAttribute('class', 'p-active');
+      
+      for(let span of spanElements) {
+        span.setAttribute('class', 'span-active');
+      }
+    }
+  }
+
   return (
     <div className='About'>
-      <div className="presentation">
-        <li>console.log('Hello world!');</li>
-        <p>I am a <span>full-stack developer</span> with proficiency in both <span>backend</span> and <span>frontend</span> development. While I am adept at working in both areas, my preference leans towards <span>backend development</span>. Currently, I am broadening my horizons and stepping out of my comfort zone by delving into new technologies.</p>
+      <div onMouseEnter={handleHover} className="presentation">
+        <h1><span className="first">console</span><span className="second">.log</span><span className="third">(</span><span className='fourth'>'Hello world!'</span><span className="fifth">)</span>;</h1>
+        <p className="p-before">I am a <span>full-stack developer</span> with proficiency in both <span>back-end</span> and <span>front-end</span> development. While I am adept at working in both areas, my preference leans towards <span>back-end development</span>. Currently, I am broadening my horizons and stepping out of my comfort zone by studying <span>C#</span>.</p>
       </div>
       <List title={'Knowledge'} elements={['Node.js', 'React.js', 'SQL', 'PostgreSQL', 'MySQL']}/>
       <List title={'Links'} elements={[

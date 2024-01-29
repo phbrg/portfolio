@@ -6,6 +6,7 @@ const Projects = () => {
   return (
     <div className='Projects'>
       <h1 className='project-title'>Projects</h1>
+      <h2 className='project-subtitle'>Click on the project to see more about it</h2>
       <Card 
         name='Market manager' 
         description='- An node.js market ( shop/store ) manager, with an interactive dashboard and many functions.' 
@@ -37,7 +38,7 @@ const Projects = () => {
         techs={['Node.js', 'Handlebars', 'PostgreSQL']} 
         source='https://github.com/phbrg/cashflow'
       />
-      <h2 className='project-subtitle'>You can find more of my projects <a href="https://github.com/phbrg?tab=repositories" target='_blank'>here</a></h2>
+      <h2 className='project-other'>You can find more of my projects <a href="https://github.com/phbrg?tab=repositories" target='_blank'>here</a></h2>
     </div>
   )
 }

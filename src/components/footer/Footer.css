@@ -9,8 +9,8 @@
 }
 
 .Footer h4 {
-  font-size: 1.1vw;
-  font-weight: 500;
+  font-size: 1vw;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 768px) {
