@@ -1,0 +1,52 @@
+.List {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  padding: 3vh 1.2vw;
+  gap: 1vh 0;
+  border-bottom: 1px solid var(--vdgray);
+}
+
+.List ul {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 25vh;
+  width: auto;
+  max-width: 100%;
+  gap: 1vh 1vw;
+}
+
+.List ul li {
+  min-width: 10vw;
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+.List ul li::marker {
+  color: var(--blue);
+}
+
+.List ul li p {
+  color: var(--lgray);
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+.List ul li p a {
+  font-family: JetBrains Mono;
+  word-wrap: break-word;
+  max-width: 100%;
+  text-decoration: underline transparent;
+}
+
+.List ul li p a:hover {
+  color: var(--blue);
+  text-decoration: underline;
+}
