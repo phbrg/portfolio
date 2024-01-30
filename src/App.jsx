@@ -1,28 +1,28 @@
-import './App.css'
-
 import { BrowserRouter, Routes, Route } from 'react-router-dom' 
 
-import Header from './components/header/Header'
-import Nav from './components/navbar/Nav'
-import AboutMe from './components/aboutme/AboutMe'
-import Footer from './components/footer/Footer'
-import Projects from './components/projects/Projects'
-import NotFound from './components/NotFound/NotFound'
+import Home from './pages/Home/Home'
+import Projects from './pages/Projects/Projects'
+
+import Header from './components/Header/Header'
+import Nav from './components/Nav/Nav'
+import Footer from './components/Footer/Footer'
+
+import './App.css'
 
 function App() {
   return (
-    <main className='App'>
-      <Header />
+    <div className='App'>
       <BrowserRouter>
+        <Header />
         <Nav />
         <Routes>
-          <Route path="/" element={<AboutMe />} />
+          <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="*" element={<NotFound />}/>
+          {/* <Route path="*" element={}/> */}
         </Routes>
         <Footer />
       </BrowserRouter>
-    </main>
+    </div>
   )
 }
 

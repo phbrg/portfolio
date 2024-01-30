@@ -1,0 +1,60 @@
+.Home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  gap: 1vh 0;
+}
+
+.Home .about-me {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1vh 0;
+  padding: 3vh 1.2vw;
+  border-bottom: 1px solid var(--vdgray);
+}
+
+.Home .about-me h1, .Home .about-me h1 span {
+  font-family: JetBrains Mono;
+  font-size: 1.29vw;
+}
+
+.Home .about-me .blue {
+  color: rgb(92, 136, 255);
+}
+
+.Home .about-me .purple {
+  color: rgb(157, 92, 255);
+}
+
+.Home .about-me .yellow {
+  color: rgb(255, 239, 92);
+}
+
+.Home .about-me .green {
+  color: rgb(122, 255, 115);
+}
+
+.Home .about-me p {
+  font-size: 1vw;
+}
+
+.Home .about-me p span {
+  font-family: JetBrains Mono;
+  font-weight: 600;
+  color: var(--blue);
+  filter: drop-shadow(0 0 5px transparent);
+}
+
+@media screen and (max-width: 768px) {
+  .Home .about-me h1, .Home .about-me h1 span {
+    font-size: 1.4vh;
+  }
+  .Home .about-me p {
+    font-size: 1.2vh;
+  }
+}

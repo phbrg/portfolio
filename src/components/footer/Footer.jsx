@@ -1,11 +1,11 @@
-import './Footer.css'
-
 import { NavLink } from 'react-router-dom'
+
+import './Footer.css'
 
 const Footer = () => {
   return (
     <footer className='Footer'>
-      <h4>&copy; phbrg</h4>
+      <p>&copy; phbrg</p>
       <NavLink to="/" className={({ isActive }) => ( isActive ? 'active' : 'inactive')}>Home</NavLink>
     </footer>
   )

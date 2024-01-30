@@ -1,14 +1,14 @@
 import './Card.css'
 
-const Card = ({ name, description, techs, source, deploy = null }) => {
+const Card = ({ title, description, skills, link }) => {
   return (
-    <a target='_blank' href={source} className='Card'>
-      <h1>{name}</h1>
-      <h2>{description}</h2>
+    <a target='_blank' href={link} className='Card'>
+      <h1>{title}</h1>
+      <p className='description'>{description}</p>
       <div className="techs">
         {
-          techs.map((tech, key) => (
-            <p key={key}>{tech}</p>
+          skills.map((skill, key) => (
+            <p key={key}>{skill}</p>
           ))
         }
       </div>

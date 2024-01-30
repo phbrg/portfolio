@@ -1,77 +1,84 @@
 .Card {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 98%;
+  width: 100%;
   height: auto;
-  padding: 2.4vh 1.5vw;
+  padding: 2.6vh 1.4vw;
+  gap: 1.6vh 0;
+  background-color: var(--bg);
   border-radius: 7px;
-  background-color: rgb(22, 22, 22);
-  border: 1px solid rgb(45, 45, 45);
-  gap: 1.5vh;
+  border: 1px solid var(--vdgray);
 }
 
 .Card:hover {
-  transform: scale(1.016);
-  background-color: rgb(15, 15, 15);
-  border: 1px solid rgb(0, 96, 174);
+  transform: scale(1.015);
+  background-color: rgb(9, 9, 10);
 }
 
 .Card h1 {
-  font-size: 1.6vw;
-  font-weight: 700;
+  font-size: 2vw;
 }
 
-.Card h2 {
-  font-size: 1vw;
+.Card .description {
+  font-size: 1.1vw;
   font-weight: 400;
-  color: rgb(180, 180, 180);
+  color: var(--lgray);
 }
 
 .Card .techs {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  height: auto;
   gap: 0 1vw;
 }
 
 .Card .techs p {
+  background-color: #fff;
   color: #000;
-  font-family: JetBrains mono;
+  font-family: JetBrains Mono;
   font-size: 1vw;
   font-weight: 800;
-  background-color: white;
   padding: 0.4vh 1vw;
   border-radius: 3px;
 }
 
-.Card .links {
-  display: flex;
-  gap: 0 1vw;
-}
-
 @media screen and (max-width: 768px) {
   .Card {
-    width: 100%;
-    padding: 1vh 3vw;
-    gap: 1vh;
+    padding: 1.2vh 2vw;
+    gap: 1vh 0;
   }
   .Card h1 {
-    font-size: 1.4vh;
+    font-size: 2vh;
   }
-  .Card h2 {
-    font-size: 0.8vh;
-  }
-  .Card .techs {
-    gap: 0 3vw;
+  .Card .description {
+    font-size: 1.29vh;
   }
   .Card .techs p {
-    padding: 0.2vh 2vw;
-    font-size: 0.8vh;
+    font-size: 1.2vh;
+    padding: 0.2vh 1.8vw;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Card {
+    padding: 1.2vh 3vw;
+    gap: 1vh 0;
+  }
+  .Card h1 {
+    font-size: 2vh;
+  }
+  .Card .description {
+    font-size: 1.29vh;
+  }
+  .Card .techs p {
+    font-size: 1.2vh;
+    padding: 0.2vh 2.2vw;
   }
 }

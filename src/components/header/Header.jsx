@@ -2,10 +2,10 @@ import './Header.css'
 
 const Header = () => {
   return (
-    <header className='Header'>
+    <div className='Header'>
       <h1>Pedro Henrique<span>.</span></h1>
-      <h2><span>-</span> Backend web developer</h2>
-    </header>
+      <h2>Back-end web developer</h2>
+    </div>
   )
 }
 

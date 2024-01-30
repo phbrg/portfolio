@@ -1,37 +1,39 @@
 .Header {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
-}
-
-.Header h1 {
-  font-size: 2.2vw;
-  font-weight: 700;
+  height: auto;
+  padding: 2vh 1vw;
 }
 
 .Header h1 span {
-  color: rgb(0, 136, 255);
+  color: var(--blue);
 }
 
 .Header h2 {
   font-size: 1.2vw;
-  font-weight: 400;
-  font-family: JetBrains mono;
-  color: rgb(220, 220, 220);
+  font-weight: 500;
+  font-family: JetBrains Mono;
+  color: var(--lgray);
 }
 
-.Header h2 span {
-  color: rgb(0, 136, 255);
+@media screen and (max-width: 425px) {
+  .Header h1 {
+    font-size: 2.2vh;
+  }
+  .Header h2 {
+    font-size: 1.2vh;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .Header h1 {
-    font-size: 2vh;
+    font-size: 2.3vh;
   }
   .Header h2 {
-    font-size: 1.6vh;
+    font-size: 1.29vh;
   }
 }

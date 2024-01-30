@@ -1,89 +1,52 @@
 .List {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
-  padding: 3vh 1.5vw;
-  gap: 1.5vh 0;
-  border-bottom: 1px solid rgb(50, 50, 50);
-}
-
-.List h1 {
-  font-size: 2vw;
+  height: auto;
+  padding: 3vh 1.2vw;
+  gap: 1vh 0;
+  border-bottom: 1px solid var(--vdgray);
 }
 
 .List ul {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
   max-height: 25vh;
+  width: auto;
+  max-width: 100%;
+  gap: 1vh 1vw;
 }
 
 .List ul li {
-  font-size: 1.1vw;
-  padding: 0.5vh 0;
-  min-width: 100%;
-  color: rgb(180, 180, 180);
+  min-width: 10vw;
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+.List ul li::marker {
+  color: var(--blue);
 }
 
 .List ul li p {
-  font-size: 1.1vw;
-  color: rgb(180, 180, 180);
-} 
+  color: var(--lgray);
+  word-wrap: break-word;
+  max-width: 100%;
+}
 
 .List ul li p a {
-  font-size: 1.1vw;
-  color: rgb(180, 180, 180);
+  font-family: JetBrains Mono;
+  word-wrap: break-word;
+  max-width: 100%;
   text-decoration: underline transparent;
 }
 
-.List ul li::marker{
-  color: rgb(80, 80, 80);
-}
-
 .List ul li p a:hover {
-  color: rgb(0, 136, 255);
+  color: var(--blue);
   text-decoration: underline;
-}
-
-.List .list-active {
-  color: #fff;
-}
-
-.List .list-active p {
-  color: #fff;
-}
-
-.List .list-active a {
-  color: #fff;
-}
-
-.List .list-active::marker {
-  color: rgb(0, 136, 255);
-}
-
-@media screen and (max-width: 768px) {
-  .List h1 {
-    font-size: 2vh;
-  }
-  .List ul li {
-    font-size: 1.2vh;
-    color: #fff;
-  }
-  .List ul li::marker {
-    color: rgb(0, 136, 255);
-  }
-  .List ul li p {
-    font-size: 1vh;
-    color: #fff;
-  }
-  .List ul li p a {
-    font-size: 1vh;
-    color: rgb(0, 136, 255);
-    text-decoration: underline;
-  }
 }
