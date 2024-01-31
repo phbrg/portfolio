@@ -11,6 +11,10 @@
   border-bottom: 1px solid var(--vdgray);
 }
 
+.List h1 {
+  font-size: 2vw;
+}
+
 .List ul {
   display: flex;
   align-items: flex-start;
@@ -24,6 +28,7 @@
 }
 
 .List ul li {
+  font-size: 1.1vw;
   min-width: 10vw;
   word-wrap: break-word;
   max-width: 100%;
@@ -34,12 +39,14 @@
 }
 
 .List ul li p {
+  font-weight: 400;
   color: var(--lgray);
   word-wrap: break-word;
   max-width: 100%;
 }
 
 .List ul li p a {
+  font-weight: 500;
   font-family: JetBrains Mono;
   word-wrap: break-word;
   max-width: 100%;
@@ -49,4 +56,16 @@
 .List ul li p a:hover {
   color: var(--blue);
   text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .List {
+    padding: 1vh 2vw;
+  }
+  .List h1 {
+    font-size: 2vh;
+  }
+  .List ul li {
+    font-size: 1.2vh;
+  }
 }

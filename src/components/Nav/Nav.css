@@ -18,3 +18,12 @@
 .inactive:hover {
   color: var(--blue);
 }
+
+@media screen and (max-width: 768px) {
+  .Nav {
+    gap: 0 4vw;
+  }
+  .Nav * {
+    font-size: 1.2vh;
+  }
+}

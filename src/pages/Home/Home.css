@@ -41,12 +41,14 @@
 
 .Home .about-me p {
   font-size: 1vw;
+  font-weight: 400;
+  color: var(--lgray);
 }
 
 .Home .about-me p span {
   font-family: JetBrains Mono;
-  font-weight: 600;
-  color: var(--blue);
+  font-weight: 400;
+  color: #fff;
   filter: drop-shadow(0 0 5px transparent);
 }
 
