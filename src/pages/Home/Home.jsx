@@ -7,7 +7,7 @@ const Home = () => {
     <div className='Home'>
       <div className="about-me">
         <h1><span className="blue">console</span><span className="purple">.log</span><span className="yellow">(</span><span className="green">'Hello World!'</span><span className="yellow">)</span>;</h1>
-        <p>&ensp;I am a <span>full-stack developer</span> with proficiency in both <span>back-end</span> and <span>front-end development</span>. While I am adept at working in both areas, my preference leans towards <span>back-end development</span>. Currently, I am broadening my horizons and stepping out of my comfort zone by studying <span>C#</span>.</p>
+        <p>I am a <span>full stack developer</span>, specializing in <span>back-end development</span> with <span>Node.js</span>. Currently, I am expanding my skills by studying <span>C# .NET</span>.</p>
       </div>
       <List title='Knowledge' elements={[
         'Node.js', 

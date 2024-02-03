@@ -13,6 +13,8 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  width: 100%;
+  height: auto;
   gap: 1vh 0;
   padding: 3vh 1.2vw;
   border-bottom: 1px solid var(--vdgray);

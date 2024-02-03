@@ -28,7 +28,9 @@
 }
 
 .List ul li {
+  font-family: JetBrains Mono;
   font-size: 1.1vw;
+  font-weight: 500;
   min-width: 10vw;
   word-wrap: break-word;
   max-width: 100%;
