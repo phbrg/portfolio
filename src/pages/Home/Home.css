@@ -20,25 +20,10 @@
   border-bottom: 1px solid var(--vdgray);
 }
 
-.Home .about-me h1, .Home .about-me h1 span {
+.Home .about-me h1 {
   font-family: JetBrains Mono;
-  font-size: 1.29vw;
-}
-
-.Home .about-me .blue {
-  color: rgb(92, 136, 255);
-}
-
-.Home .about-me .purple {
-  color: rgb(157, 92, 255);
-}
-
-.Home .about-me .yellow {
-  color: rgb(255, 239, 92);
-}
-
-.Home .about-me .green {
-  color: rgb(122, 255, 115);
+  font-size: 1.4vw;
+  font-weight: 700;
 }
 
 .Home .about-me p {

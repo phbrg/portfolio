@@ -16,7 +16,7 @@
 }
 
 .inactive:hover {
-  color: var(--blue);
+  color: var(--red);
 }
 
 @media screen and (max-width: 768px) {

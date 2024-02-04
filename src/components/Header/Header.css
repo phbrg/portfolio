@@ -10,14 +10,49 @@
 }
 
 .Header h1 span {
-  color: var(--blue);
+  color: var(--red);
 }
 
 .Header h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1.2vw;
   font-weight: 400;
   font-family: JetBrains Mono;
   color: var(--lgray);
+  gap: 0 0.8vw;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15px;
+  width: 15px;
+  background-color: transparent;
+  border-radius: 10000px;
+  padding: 3px;
+  animation: radar 1.6s infinite ease-in;
+}
+
+.inside {
+  height: 100%;
+  width: 100%;
+  background-color: var(--red);
+  border-radius: 10000px;
+}
+
+@keyframes radar {
+  0% {
+    background-color: transparent;
+  } 
+  50% {
+    background-color: rgba(255, 0, 0, 0.3);
+  }
+  100% {
+    background-color: transparent;
+  }
 }
 
 @media screen and (max-width: 425px) {

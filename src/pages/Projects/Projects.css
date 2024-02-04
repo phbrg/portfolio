@@ -31,7 +31,7 @@
 }
 
 .Projects .other-projects a {
-  color: var(--blue);
+  color: var(--red);
   text-decoration: underline transparent;
 }
 
