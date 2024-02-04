@@ -17,7 +17,7 @@
 
 .Card:hover {
   transform: scale(1.015);
-  background-color: rgb(14, 14, 16);
+  background-color: #080808;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
 }
 
