@@ -28,12 +28,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 15px;
-  width: 15px;
+  height: 14px;
+  width: 14px;
   background-color: transparent;
   border-radius: 10000px;
   padding: 3px;
-  animation: radar 1.6s infinite ease-in;
+  animation: radar 1s infinite ease-in;
 }
 
 .inside {
@@ -48,7 +48,7 @@
     background-color: transparent;
   } 
   50% {
-    background-color: rgba(255, 0, 0, 0.3);
+    background-color: rgba(255, 80, 80, 0.4);
   }
   100% {
     background-color: transparent;
