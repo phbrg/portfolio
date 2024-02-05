@@ -20,10 +20,14 @@
   border-bottom: 1px solid var(--vdgray);
 }
 
-.Home .about-me h1 {
+.Home .about-me h1, .Home .about-me h1 span {
   font-family: JetBrains Mono;
-  font-size: 1.4vw;
+  font-size: 1.29vw;
   font-weight: 700;
+}
+
+.Home .about-me:hover h1 span {
+  color: var(--red);
 }
 
 .Home .about-me p {

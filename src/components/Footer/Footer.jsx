@@ -5,7 +5,7 @@ import './Footer.css'
 const Footer = () => {
   return (
     <footer className='Footer'>
-      <p>&copy; phbrg</p>
+      <p>2024 &copy; phbrg</p>
       <NavLink to="/" className={({ isActive }) => ( isActive ? 'active' : 'inactive')}>Home</NavLink>
     </footer>
   )

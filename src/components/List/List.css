@@ -37,10 +37,6 @@
 }
 
 .List ul li::marker {
-  color: var(--gray);
-}
-
-.List ul li:hover::marker {
   color: var(--red);
 }
 
@@ -66,7 +62,11 @@
 
 @media screen and (max-width: 768px) {
   .List {
+    gap: 1vh 0;
     padding: 1vh 2vw;
+  }
+  .List ul {
+    gap: 0.5vh 0;
   }
   .List h1 {
     font-size: 2vh;

@@ -7,3 +7,13 @@
   height: auto;
   padding: 2vh 1vw;
 }
+
+.Footer p {
+  font-size: 1vw;
+}
+
+@media screen and (max-width: 768px) {
+  .Footer p {
+    font-size: 1vh;
+  }
+}

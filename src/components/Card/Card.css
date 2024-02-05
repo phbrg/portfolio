@@ -12,14 +12,12 @@
   border-radius: 7px;
   border: 1px solid var(--vdgray);
   transition: 1;
-  filter: drop-shadow(0 0 10px transparent);
 }
 
 .Card:hover {
   transform: scale(1.015);
   background-color: #080808;
-  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
-  border: 1px solid rgb(100, 0, 0);
+  border: 1px solid rgba(255, 45, 45, 0.7);
 }
 
 .Card h1 {
@@ -45,13 +43,12 @@
 }
 
 .Card .techs p {
-  background-color: rgba(255, 255, 255, 0.9);
-  color: #000;
-  font-family: JetBrains Mono;
+  background-color: rgba(255, 45, 45, 0.7);
+  color: #ffffff;
   font-size: 0.95vw;
-  font-weight: 800;
-  padding: 0.4vh 1.2vw;
-  border-radius: 4px;
+  font-weight: 400;
+  padding: 0.5vh 1.1vw;
+  border-radius: 10000px;
 }
 
 @media screen and (max-width: 768px) {
