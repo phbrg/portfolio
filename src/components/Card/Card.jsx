@@ -1,9 +1,12 @@
 import './Card.css'
 
-const Card = ({ title, description, skills, link }) => {
+const Card = ({ title, date, description, skills, link }) => {
   return (
     <a target='_blank' href={link} className='Card'>
-      <h1>{title}</h1>
+      <div className="header">
+        <h1>{title}</h1>
+        <p>{date}</p>
+      </div>
       <p className='description'>{description}</p>
       <div className="techs">
         {

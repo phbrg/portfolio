@@ -33,7 +33,7 @@
   background-color: transparent;
   border-radius: 10000px;
   padding: 3px;
-  animation: radar 1s infinite ease-in;
+  animation: radar 0.9s infinite ease-in;
 }
 
 .inside {

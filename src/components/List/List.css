@@ -12,7 +12,7 @@
 }
 
 .List h1 {
-  font-size: 2vw;
+  font-size: 1.8vw;
 }
 
 .List ul {
@@ -30,7 +30,7 @@
 .List ul li {
   font-family: JetBrains Mono;
   font-size: 1.1vw;
-  font-weight: 400;
+  font-weight: 500;
   min-width: 10vw;
   word-wrap: break-word;
   max-width: 100%;

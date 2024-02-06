@@ -20,14 +20,20 @@
   border-bottom: 1px solid var(--vdgray);
 }
 
-.Home .about-me h1, .Home .about-me h1 span {
-  font-family: JetBrains Mono;
-  font-size: 1.29vw;
+.Home .about-me h1 {
+  font-size: 1.7vw;
   font-weight: 700;
 }
 
-.Home .about-me:hover h1 span {
-  color: var(--red);
+.Home .about-me h1 span {
+  display: inline-block;
+  animation: hello 1.5s linear infinite;
+}
+
+@keyframes hello {
+  0% { rotate: 0; }
+  50% { rotate: 15deg; }
+  100% { rotate: 0; }
 }
 
 .Home .about-me p {
@@ -36,7 +42,12 @@
   color: var(--lgray);
 }
 
+.Home .about-me p::first-letter {
+  padding-left: 1vw;
+}
+
 .Home .about-me p span {
+  letter-spacing: 0.2px;
   font-family: JetBrains Mono;
   font-weight: 400;
   color: #fff;

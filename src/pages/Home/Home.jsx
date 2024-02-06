@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className='Home'>
       <div className="about-me">
-        <h1>console.log(<span>'Hello World!'</span>);</h1>
+        <h1>Hello World! <span>👋</span></h1>
         <p>I am a <span>full stack developer</span>, specializing in <span>back-end development</span> with <span>Node.js</span>. Currently, I am expanding my skills by studying <span>C# .NET</span>.</p>
       </div>
       <List title='Knowledge' elements={[
