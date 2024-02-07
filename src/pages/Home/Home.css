@@ -27,7 +27,7 @@
 
 .Home .about-me h1 span {
   display: inline-block;
-  animation: hello 1.5s linear infinite;
+  animation: hello 1.2s linear infinite;
 }
 
 @keyframes hello {
@@ -49,7 +49,7 @@
 .Home .about-me p span {
   letter-spacing: 0.2px;
   font-family: JetBrains Mono;
-  font-weight: 400;
+  font-weight: 300;
   color: #fff;
   filter: drop-shadow(0 0 5px transparent);
 }

@@ -1,10 +1,8 @@
-import { NavLink } from 'react-router-dom'
-
 import './Card.css'
 
-const Card = ({ title, date, description, tags, link }) => {
+const Card = ({ title, date, description, tags, link, blank }) => {
   return (
-    <NavLink to={link} className='Card'>
+    <a target={blank ? '_blank' : '_self'} href={link} className='Card'>
       <div className="header">
         <h1>{title}</h1>
         <p>{date}</p>
@@ -17,7 +15,7 @@ const Card = ({ title, date, description, tags, link }) => {
           ))
         }
       </div>
-    </NavLink>
+    </a>
   )
 }
 
