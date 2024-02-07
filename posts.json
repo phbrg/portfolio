@@ -4,7 +4,7 @@
       "id": 1,
       "title": "How I made this blog",
       "date": "06/02/2024",
-      "description": "First post telling how I made this blog with no backend.",
+      "description": "First post telling how I created this blog without a backend.",
       "body": [
         "Hello everyone,",
         "I've always wanted to have a blog on my portfolio to share experiences, code snippets, and more. However, whenever I considered how to implement it, I immediately envisioned a complex setup with a backend, login system, database, and the associated environment. For a portfolio, that seemed like overkill, and I was hesitant to introduce potential vulnerabilities, API concerns, and database hosting issues.",
