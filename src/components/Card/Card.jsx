@@ -1,8 +1,12 @@
 import './Card.css'
 
 const Card = ({ title, date, description, tags, link }) => {
+  const handleOnClick = () => {
+    window.location.href = link;
+  }
+
   return (
-    <a href={link} className='Card'>
+    <div onClick={handleOnClick} className='Card'>
       <div className="header">
         <h1>{title}</h1>
         <p>{date}</p>
@@ -15,7 +19,7 @@ const Card = ({ title, date, description, tags, link }) => {
           ))
         }
       </div>
-    </a>
+    </div>
   )
 }
 
