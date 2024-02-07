@@ -1,8 +1,8 @@
 import './Card.css'
 
-const Card = ({ title, date, description, tags, link, blank }) => {
+const Card = ({ title, date, description, tags, link }) => {
   return (
-    <a target={blank ? '_blank' : '_self'} href={link} className='Card'>
+    <a href={link} className='Card'>
       <div className="header">
         <h1>{title}</h1>
         <p>{date}</p>
