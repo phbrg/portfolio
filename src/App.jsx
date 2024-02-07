@@ -2,6 +2,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Home from './pages/Home/Home'
 import Projects from './pages/Projects/Projects'
+import NotFound from './pages/NotFound/NotFound'
+import Blog from './pages/Blog/Blog'
+import Post from './pages/Post/Post'
 
 import Header from './components/Header/Header'
 import Nav from './components/Nav/Nav'
@@ -18,7 +21,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
-          {/* <Route path="*" element={}/> */}
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/post/:id" element={<Post />} />
+          <Route path="*" element={<NotFound />}/>
         </Routes>
         <Footer />
       </BrowserRouter>

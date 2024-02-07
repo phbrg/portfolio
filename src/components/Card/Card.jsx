@@ -1,8 +1,8 @@
 import './Card.css'
 
-const Card = ({ title, date, description, skills, link }) => {
+const Card = ({ title, date, description, tags, link, blank }) => {
   return (
-    <a target='_blank' href={link} className='Card'>
+    <a target={blank ? '_blank' : '_self'} href={link} className='Card'>
       <div className="header">
         <h1>{title}</h1>
         <p>{date}</p>
@@ -10,7 +10,7 @@ const Card = ({ title, date, description, skills, link }) => {
       <p className='description'>{description}</p>
       <div className="techs">
         {
-          skills.map((skill, key) => (
+          tags.map((skill, key) => (
             <p key={key}>{skill}</p>
           ))
         }

@@ -7,6 +7,7 @@ const Nav = () => {
     <nav className='Nav'>
       <NavLink to="/" className={({ isActive }) => ( isActive ? 'active' : 'inactive')}>About me</NavLink>
       <NavLink to="/projects" className={({ isActive }) => ( isActive ? 'active' : 'inactive')}>Projects</NavLink>
+      <NavLink to="/blog" className={({ isActive }) => ( isActive ? 'active' : 'inactive')}>Blog</NavLink>
     </nav>
   )
 }

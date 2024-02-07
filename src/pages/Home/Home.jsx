@@ -7,7 +7,7 @@ const Home = () => {
     <div className='Home'>
       <div className="about-me">
         <h1>Hello World! <span>👋</span></h1>
-        <p>I am a <span>full stack developer</span>, specializing in <span>back-end development</span> with <span>Node.js</span>. Currently, I am expanding my skills by studying <span>C# .NET</span>.</p>
+        <p>I am a <span>full stack developer</span>, specializing in <span>back-end development</span> with <span>Node.js</span>. Currently, I am expanding my tags by studying <span>C# .NET</span>.</p>
       </div>
       <List title='Knowledge' elements={[
         'Node.js', 

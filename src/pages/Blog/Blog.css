@@ -1,0 +1,40 @@
+.Blog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  gap: 2vh 0;
+}
+
+.Blog .blog-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  gap: 1vh 0;
+}
+
+.Blog .blog-header h1 {
+  font-size: 1.8vw;
+}
+
+.Blog .blog-header h2 {
+  font-size: 1vw;
+  font-weight: 400;
+  color: var(--lgray);
+}
+
+@media screen and (max-width: 768px) {
+  .Blog .blog-header h1 {
+    font-size: 1.8vh;
+  }
+  .Blog .blog-header h2 {
+    font-size: 1.2vh;
+  }
+}

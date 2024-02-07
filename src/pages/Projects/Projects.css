@@ -19,8 +19,12 @@
   height: auto;
 }
 
+.Projects .project-header h1 {
+  font-size: 1.8vw;
+}
+
 .Projects .project-header h2 {
-  font-size: 1.1vw;
+  font-size: 1vw;
   font-weight: 400;
   color: var(--lgray);
 }
@@ -40,10 +44,12 @@
 }
 
 @media screen and (max-width: 768px) {
+  .Projects .project-header h1 {
+    font-size: 1.8vh;
+  }
   .Projects .project-header h2 {
     font-size: 1.2vh;
   }
-
   .Projects .other-projects {
     font-size: 1.4vh;
   }
