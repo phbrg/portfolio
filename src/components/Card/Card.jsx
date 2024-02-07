@@ -1,12 +1,10 @@
+import { NavLink } from 'react-router-dom'
+
 import './Card.css'
 
 const Card = ({ title, date, description, tags, link }) => {
-  const handleOnClick = () => {
-    window.location.href = link;
-  }
-
   return (
-    <div onClick={handleOnClick} className='Card'>
+    <NavLink to={link} className='Card'>
       <div className="header">
         <h1>{title}</h1>
         <p>{date}</p>
@@ -19,7 +17,7 @@ const Card = ({ title, date, description, tags, link }) => {
           ))
         }
       </div>
-    </div>
+    </NavLink>
   )
 }
 
