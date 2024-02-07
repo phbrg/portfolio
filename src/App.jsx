@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Home from './pages/Home/Home'
 import Projects from './pages/Projects/Projects'
-import NotFound from './pages/NotFound/NotFound'
+// import NotFound from './pages/NotFound/NotFound'
 import Blog from './pages/Blog/Blog'
 import Post from './pages/Post/Post'
 
@@ -23,7 +23,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/post/:id" element={<Post />} />
-          <Route path="*" element={<NotFound />}/>
+          {/* <Route path="*" element={<NotFound />}/> */}
         </Routes>
         <Footer />
       </BrowserRouter>
