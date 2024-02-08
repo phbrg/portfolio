@@ -7,7 +7,7 @@
   width: 100%;
   height: auto;
   padding: 2.6vh 1.4vw;
-  gap: 1.6vh 0;
+  gap: 1vh 0;
   background-color: var(--bg);
   border-radius: 7px;
   border: 1px solid var(--vdgray);
@@ -30,8 +30,8 @@
 }
 
 .Card .header h1 {
-  font-size: 1.7vw;
-  font-weight: 700;
+  font-size: 1.4vw;
+  font-weight: 800;
 }
 
 .Card .header p {
@@ -42,7 +42,7 @@
 
 .Card .description {
   font-size: 1vw;
-  font-weight: 400;
+  font-weight: 600;
   color: var(--lgray);
 }
 
@@ -60,9 +60,10 @@
 .Card .techs p {
   background-color: rgb(255, 255, 255);
   color: #000;
+  font-family: JetBrains Mono;
   font-size: 0.9vw;
-  font-weight: 600;
-  padding: 0.4vh 1.1vw;
+  font-weight: 900;
+  padding: 0.4vh 1vw;
   border-radius: 5px;
 }
 
@@ -78,7 +79,10 @@
     font-size: 1vh;
   }
   .Card .description {
-    font-size: 1.29vh;
+    font-size: 1.2vh;
+  }
+  .Card .techs {
+    gap: 0 2vw;
   }
   .Card .techs p {
     font-size: 1.2vh;
@@ -95,7 +99,7 @@
     font-size: 1.6vh;
   }
   .Card .description {
-    font-size: 1vh;
+    font-size: 1.1vh;
   }
   .Card .techs p {
     font-size: 1.2vh;

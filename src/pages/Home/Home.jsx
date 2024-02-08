@@ -1,3 +1,5 @@
+import me from '../../../public/me.jfif'
+
 import List from '../../components/List/List'
 
 import './Home.css'
@@ -6,7 +8,13 @@ const Home = () => {
   return (
     <div className='Home'>
       <div className="about-me">
-        <h1>Hello World! <span>👋</span></h1>
+          <header>
+          <img src={me} alt="teste" />
+          <div className="texts">
+            <h1>Pedro Henrique<span>.</span></h1>
+            <h2><div className="circle"><div className="inside"></div></div> Full Stack Developer</h2>
+          </div>
+        </header>
         <p>I am a <span>full stack developer</span>, specializing in <span>back-end development</span> with <span>Node.js</span>. Currently, I am expanding my skills by studying <span>C# .NET</span>.</p>
       </div>
       <List title='Knowledge' elements={[

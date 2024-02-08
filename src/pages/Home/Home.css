@@ -11,54 +11,122 @@
 
 .Home .about-me {
   display: flex;
+  align-items: flex-start;
+  justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
   height: auto;
-  gap: 1vh 0;
-  padding: 3vh 1.2vw;
   border-bottom: 1px solid var(--vdgray);
+  padding: 2vh 1.2vw;
+  gap: 2vh 0;
 }
 
-.Home .about-me h1 {
-  font-size: 1.7vw;
-  font-weight: 700;
+.Home .about-me header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
 }
 
-.Home .about-me h1 span {
-  display: inline-block;
-  animation: hello 1.2s linear infinite;
+.Home .about-me header img {
+  height: 80px;
+  width: 80px;
+  border-radius: 10px;
 }
 
-@keyframes hello {
-  0% { rotate: 0; }
-  50% { rotate: 15deg; }
-  100% { rotate: 0; }
+.Home .about-me header .texts {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0 1vw;
+}
+
+.Home .about-me header .texts h1 {
+  font-size: 2vw;
+  font-weight: 800;
+}
+
+.Home .about-me header .texts h1 span {
+  color: var(--red);
+}
+
+.Home .about-me header .texts h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2vw;
+  font-weight: 500;
+  font-family: JetBrains Mono;
+  color: var(--lgray);
+  gap: 0 0.8vw;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 14px;
+  width: 14px;
+  background-color: transparent;
+  border-radius: 10000px;
+  padding: 3px;
+  animation: radar 0.9s infinite ease-in;
+}
+
+.inside {
+  height: 100%;
+  width: 100%;
+  background-color: var(--red);
+  border-radius: 10000px;
+}
+
+@keyframes radar {
+  0% {
+    background-color: transparent;
+  } 
+  50% {
+    background-color: rgba(255, 80, 80, 0.4);
+  }
+  100% {
+    background-color: transparent;
+  }
 }
 
 .Home .about-me p {
   font-size: 1vw;
-  font-weight: 400;
+  font-weight: 600;
   color: var(--lgray);
 }
 
-.Home .about-me p::first-letter {
-  padding-left: 1vw;
-}
-
 .Home .about-me p span {
-  letter-spacing: 0.2px;
+  font-size: 0.95vw;
+  font-weight: 600;
   font-family: JetBrains Mono;
-  font-weight: 300;
-  color: #fff;
-  filter: drop-shadow(0 0 5px transparent);
 }
 
 @media screen and (max-width: 768px) {
-  .Home .about-me h1, .Home .about-me h1 span {
+  .Home .about-me header {
+    gap: 0 3vw;
+  }
+  .Home .about-me header .texts h1 {
+    font-size: 2vh;
+  }
+  .Home .about-me header .texts h2 {
+    font-size: 1.6vh;
+  }
+  .Home .about-me p, .Home .about-me p span {
     font-size: 1.4vh;
   }
-  .Home .about-me p {
-    font-size: 1.2vh;
+}
+
+@media screen and (max-width: 425px) {
+  .Home .about-me header .texts h2 {
+    font-size: 1.4vh;
   }
 }

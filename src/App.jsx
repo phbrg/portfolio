@@ -6,7 +6,6 @@ import NotFound from './pages/NotFound/NotFound'
 import Blog from './pages/Blog/Blog'
 import Post from './pages/Post/Post'
 
-import Header from './components/Header/Header'
 import Nav from './components/Nav/Nav'
 import Footer from './components/Footer/Footer'
 
@@ -16,7 +15,6 @@ function App() {
   return (
     <div className='App'>
       <BrowserRouter>
-        <Header />
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />

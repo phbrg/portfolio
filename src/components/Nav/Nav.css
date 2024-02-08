@@ -10,6 +10,10 @@
   padding: 1vh 0;
 }
 
+.Nav * {
+  font-weight: 600;
+}
+
 .active {
   cursor: default;
   color: var(--gray);
@@ -24,6 +28,6 @@
     gap: 0 4vw;
   }
   .Nav * {
-    font-size: 1.2vh;
+    font-size: 1.6vh;
   }
 }

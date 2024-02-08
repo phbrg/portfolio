@@ -22,7 +22,8 @@
 
 .Post .post-header h1 {
   font-size: 1.7vw;
-  font-weight: 500;
+  font-weight: 700;
+  color: var(--red);
 }
 
 .Post .post-header p {
@@ -31,7 +32,7 @@
 }
 
 .Post .body {
-  font-weight: 300;
+  font-weight: 400;
   padding: 0 0.2vw;
 }
 

@@ -2,7 +2,7 @@
   "posts": [
     {
       "id": 2,
-      "title": "How I fixed a bug on my portfolio",
+      "title": "A bug on production",
       "date": "07/02/2024",
       "description": "Yesterday when I updated my portfolio a bug appeared in react-router-dom, and this is how i solved it.",
       "body": [
@@ -14,7 +14,7 @@
     },
     {
       "id": 1,
-      "title": "How I made this blog",
+      "title": "This blog history",
       "date": "06/02/2024",
       "description": "First post telling how I created this blog without a backend.",
       "body": [
