@@ -1,4 +1,4 @@
-import me from '../../../public/me.jfif'
+import me from '../../assets/me.jfif'
 
 import List from '../../components/List/List'
 

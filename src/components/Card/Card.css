@@ -9,14 +9,14 @@
   padding: 2.6vh 1.4vw;
   gap: 1vh 0;
   background-color: var(--bg);
-  border-radius: 7px;
+  border-radius: 10px;
   border: 1px solid var(--vdgray);
   transition: 1;
 }
 
 .Card:hover {
   transform: scale(1.015);
-  background-color: #080808;
+  background-color: #030303;
 }
 
 .Card .header {
@@ -30,7 +30,7 @@
 }
 
 .Card .header h1 {
-  font-size: 1.4vw;
+  font-size: 1.5vw;
   font-weight: 800;
 }
 
