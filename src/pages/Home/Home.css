@@ -9,20 +9,7 @@
   gap: 1vh 0;
 }
 
-.Home .about-me {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 100%;
-  height: auto;
-  border-bottom: 1px solid var(--vdgray);
-  padding: 2vh 1.2vw;
-  gap: 2vh 0;
-}
-
-.Home .about-me header {
+.Home header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -30,103 +17,105 @@
   flex-wrap: wrap;
   width: 100%;
   height: auto;
+  padding: 3vh 1vw;
+  gap: 2vh 0;
+  border-bottom: 1px solid var(--vdgray);
 }
 
-.Home .about-me header img {
-  height: 70px;
-  width: 70px;
-  border-radius: 8px;
-}
-
-.Home .about-me header .texts {
+.Home header .row {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+
+.Home header p {
+  font-weight: 500;
+  color: var(--lgray);
+
+  & span {
+    font-weight: 700;
+  }
+}
+
+.Home header img {
+  height: 80px;
+  width: 80px;
+  border-radius: 10px;
+}
+
+.Home header .texts {
+  border-right: 1px solid var(--vdgray);
   padding: 0 1vw;
 }
 
-.Home .about-me header .texts h1 {
-  font-size: 2.2vw;
+.Home header .texts h1 {
   font-weight: 800;
 }
 
-.Home .about-me header .texts h1 span {
-  color: var(--red);
-}
-
-.Home .about-me header .texts h2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2vw;
+.Home header .texts h2 {
+  font-family: JetBrains mono;
+  font-size: 1.29vw;
   font-weight: 400;
-  font-family: JetBrains Mono;
   color: var(--lgray);
-  gap: 0 0.8vw;
+  gap: 0 5px;
 }
 
-.circle {
+.Home header .links {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 14px;
-  width: 14px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: auto;
+  gap: 0 1vw;
+  padding: 0 1vw;
+}
+
+.Home header .links i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8vw;
+  height: 50px;
+  width: 50px;
+  border-radius: 7px;
+  color: #fff;
   background-color: transparent;
-  border-radius: 10000px;
-  padding: 3px;
-  animation: radar 0.9s infinite ease-in;
 }
 
-.inside {
-  height: 100%;
-  width: 100%;
-  background-color: var(--red);
-  border-radius: 10000px;
-}
-
-@keyframes radar {
-  0% {
-    background-color: transparent;
-  } 
-  50% {
-    background-color: rgba(255, 80, 80, 0.4);
-  }
-  100% {
-    background-color: transparent;
-  }
-}
-
-.Home .about-me p {
-  font-size: 1vw;
-  font-weight: 600;
-  color: var(--lgray);
-}
-
-.Home .about-me p span {
-  font-size: 0.95vw;
-  font-weight: 600;
-  font-family: JetBrains Mono;
+.Home header .links i:hover {
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 @media screen and (max-width: 768px) {
-  .Home .about-me header {
-    gap: 0 3vw;
+  .Home header .row .texts {
+    padding: 0 3vw;
+
+    & h2 {
+      font-size: 1.8vh;
+    }
   }
-  .Home .about-me header .texts h1 {
-    font-size: 2vh;
-  }
-  .Home .about-me header .texts h2 {
-    font-size: 1.6vh;
-  }
-  .Home .about-me p, .Home .about-me p span {
-    font-size: 1.4vh;
+  .Home header .row .links i {
+    font-size: 2.4vh;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .Home .about-me header .texts h2 {
-    font-size: 1.4vh;
+  .Home header img {
+    display: none;
+  }
+  .Home header .row .texts {
+    padding: 0 1vw;
+
+    & h1 {
+      font-size: 2vh;
+    }
+
+    & h2 {
+      font-size: 1.4vh;
+    }
+  }
+  .Home header .row .links i {
+    font-size: 2.6vh;
   }
 }

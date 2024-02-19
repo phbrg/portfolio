@@ -5,6 +5,12 @@ import Card from '../../components/Card/Card'
 import './Blog.css'
 
 const Blog = () => {
+  const reversedPosts = [];
+
+  for (let i = json.posts.length - 1; i >= 0; i--) {
+    reversedPosts.push(json.posts[i]);
+  }
+
   return (
     <section className='Blog'>
       <div className="blog-header">
@@ -12,7 +18,7 @@ const Blog = () => {
         <h2>Click on the post to see more about it.</h2>
       </div>
       {
-        json.posts.map((post) => (
+        reversedPosts.map((post) => (
           <Card 
             key={post.id}
             title={post.title}

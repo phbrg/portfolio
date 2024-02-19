@@ -7,16 +7,21 @@ import './Home.css'
 const Home = () => {
   return (
     <div className='Home'>
-      <div className="about-me">
-          <header>
-          <img src={me} alt="teste" />
+      <header>
+        <div className="row">
+          <img src={me} alt="me" />
           <div className="texts">
-            <h1>Pedro Henrique<span>.</span></h1>
-            <h2><div className="circle"><div className="inside"></div></div> Full Stack Developer</h2>
+            <h1>Pedro Henrique</h1>
+            <h2>_FullStack Developer</h2>
           </div>
-        </header>
-        <p>I am a <span>full stack developer</span>, specializing in <span>back-end development</span> with <span>Node.js</span>. Currently, I am expanding my skills by studying <span>C# .NET</span>.</p>
-      </div>
+          <div className="links">
+            <a href="https://github.com/phbrg" target='_blank'><i className="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/pedro-henrique-b-bergamin/" target='_blank'><i className="fa-brands fa-linkedin"></i></a>
+            <a href="https://docs.google.com/document/d/1Xi74-yLk5FwePZGwjUK-6YRvXMjik-QamVtv3uLX3ls/edit?usp=sharing" target='_blank'><i className="fa-solid fa-file"></i></a>
+          </div>
+        </div>
+        <p>I am a <span>Full Stack Developer</span>, specializing in <span>Back-End Development</span> with <span>Node.js</span>. Currently, I am expanding my skills by studying <span>C# & .NET</span>.</p>
+      </header>
       <List title='Knowledge' elements={[
         'Node.js', 
         'React.js', 
@@ -24,12 +29,6 @@ const Home = () => {
         'PostgreSQL', 
         'MySQL',
         ]} />
-      <List title='Links' elements={[
-        <p><a target='_blank' href="https://github.com/phbrg">phbrg</a> - Github</p>,
-        <p><a target='_blank' href="https://www.linkedin.com/in/pedro-henrique-b-bergamin/">Pedro Henrique B Bergamin</a> - Linkedin</p>,
-        <p><a target='_blank' href="mailto:pedrohenriquebatistabergamin@gmail.com">pedrohenriquebatistabergamin@gmail.com</a> - Email</p>,
-        <p><a target='_blank' href="https://docs.google.com/document/d/1Xi74-yLk5FwePZGwjUK-6YRvXMjik-QamVtv3uLX3ls/edit?usp=sharing">Link</a> - Resume</p>,
-      ]} />
     </div>
   )
 }

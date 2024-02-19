@@ -11,12 +11,14 @@
 }
 
 .Nav * {
-  font-weight: 600;
+  font-family: JetBrains Mono;
+  font-weight: 400;
 }
 
 .active {
   cursor: default;
   color: var(--gray);
+  font-weight: 500;
 }
 
 .inactive:hover {

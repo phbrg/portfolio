@@ -35,6 +35,7 @@
   min-width: 10vw;
   word-wrap: break-word;
   max-width: 100%;
+  color: var(--lgray);
 }
 
 .List ul li::marker {
@@ -70,9 +71,10 @@
     gap: 0.5vh 0;
   }
   .List h1 {
-    font-size: 2vh;
+    font-size: 2.4vh;
   }
   .List ul li {
-    font-size: 1.2vh;
+    font-size: 1.8vh;
+    font-weight: 600;
   }
 }
