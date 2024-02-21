@@ -41,6 +41,7 @@
     gap: 0 0.7vw;
 
     & .tag {
+      font-size: 1vw;
       font-weight: 400;
       background-color: rgba(255, 255, 255, 0.1);
       padding: 0.5vh 1.2vw;
