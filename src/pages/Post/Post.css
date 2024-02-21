@@ -1,0 +1,44 @@
+.Post {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+  gap: 1vh 0;
+  padding: 5vh 5vw;
+
+  & header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2vh 0;
+
+    & h1 {
+      font-weight: 500;
+      color: var(--blue);
+    }
+
+    & p {
+      color: var(--gray);
+      font-weight: 450;
+    }
+  }
+
+  & .links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0 1vw;
+    width: 100%;
+    height: auto;
+
+    & a {
+      font-size: 1.1vw;
+      color: var(--blue);
+      text-decoration: underline;
+    }
+  }
+}

@@ -25,9 +25,11 @@
 
   & .button {
     font-size: 1.2vw;
+    color: var(--blue);
+    text-decoration: underline transparent;
 
     &:hover {
-      color: var(--blue);
+      text-decoration: underline;
     }
   }
 }

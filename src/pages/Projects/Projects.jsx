@@ -1,14 +1,12 @@
 import { Card } from '../../components/Card/Card'
+import { Header } from '../../components/Header/Header'
 
 import './Projects.css'
 
 export const Projects = () => {
   return (
     <section className='Projects'>
-      <header>
-        <h1>Projects</h1>
-        <h2>Click on the project name to see more abot it.</h2>
-      </header>
+      <Header title='Projects' description='Click on the project to see more about it.'/>
       <div className="card-container">
         <Card title='Market Manager' date='Jan, 2024 - Present' description='An node.js market ( shop/store ) manager, with an interactive dashboard and many functions.' tags={['Node.js', 'React.js', 'PostgreSQL']} link='https://github.com/phbrg/market-manager' blank={true}/>
         <Card title='Restaurant Manager' date='Nov, 2023 - Present' description='A restaurant management web application focused on facilitating customer orders and restaurant organization.' tags={['Node.js', 'Angular', 'PostgreSQL']} link='https://github.com/phbrg/restaurant-manager' blank={true}/>

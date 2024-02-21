@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "My path throug coding",
+      "date": "21/02/2024",
+      "description": "How I started my coding journey and where I am now in my coding career.",
+      "body": [
+        "Hello world,",
+        "I started my coding journey almost two years ago, in 2022, by creating game modifications with Lua. It was really fun, and at that time, I was only coding for hobby. Prior to 2022, I had never written a single line of code, but when I discovered that I could modify and create my own things with code, I was amazed.",
+        "Back then, I was only coding for fun and didn't even consider getting paid or turning this hobby into a job. However, the more I researched it, the more fascinated I became with coding. Shortly after, I discovered HTML and CSS, and I was amazed that with some HTML tags and some CSS styles, I could create a real website with anything I wanted.",
+        "For almost a year, I created static websites with HTML and CSS and didn't focus much on coding at all. I started doing it again just for fun and forgot that I could transform it into something bigger. Sometime later, I moved to another school, which was now a technical school, and that feeling of wanting to improve myself and my knowledge blossomed again.",
+        "I didn't learn much at school because the teaching was very weak, but I started researching coding more, exploring what I could become and what coding careers I could pursue. Initially, I thought I wanted to be a front-end developer, building beautiful and large websites. However, when I discovered back-end development and Node.js, I abandoned the idea of becoming a front-end developer and just focused on back-end development with it.",
+        "Currently, I have learned Node.js and built some projects with it. I have also learned and built projects with React.js (a front-end JavaScript framework). I am now learning C# .NET, some other technologies like Docker and Jest, and some other web development technologies."
+      ],
+      "tags": ["Tech", "History"]
+    }
+  ]
+}

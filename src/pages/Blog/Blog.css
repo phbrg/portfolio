@@ -1,23 +1,11 @@
 .Blog {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
-
-  & h1 {
-    font-size: 2vw;
-    font-weight: 400;
-    color: var(--gray);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .Blog {
-    & h1 {
-      font-size: 3vh;
-    }
-  }
+  gap: 2vh 0;
+  padding: 0 5vw;
 }

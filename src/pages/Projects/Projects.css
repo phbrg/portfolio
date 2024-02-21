@@ -9,30 +9,6 @@
   gap: 2vh 0;
   padding: 0 5vw;
 
-  & header {
-    & h1 {
-      font-size: 2vw;
-      font-weight: 450;
-    }
-
-    & h2 {
-      font-size: 1.2vw;
-      font-weight: 350;
-      color: var(--lgray);
-    }
-  }
-
-  & .card-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: 100%;
-    height: auto;
-    gap: 2vh 1vw;
-  }
-
   & .other-projects {
     width: 100%;
     text-align: center;
@@ -54,22 +30,6 @@
 @media screen and (max-width: 768px) {
   .Projects {
     padding: 6vh 2vw;
-
-    & header {
-      & h1 {
-        font-size: 3vh;
-      }
-
-      & h2 {
-        font-size: 1.7vh;
-      }
-    }
-
-    & .card-container {
-      flex-direction: column;
-      width: 100%;
-      gap: 1vh 0;
-    }
 
     & .other-projects {
       font-size: 1.5vh;

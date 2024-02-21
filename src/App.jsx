@@ -6,6 +6,7 @@ import { Nav } from './components/Nav/Nav'
 import { Home } from './pages/Home/Home'
 import { Projects } from './pages/Projects/Projects'
 import { Blog } from './pages/Blog/Blog'
+import { Post } from './pages/Post/Post'
 import { NotFound } from './pages/NotFound/NotFound'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/post/:id" element={<Post />} />
           <Route path="*" element={<NotFound />}/>
         </Routes>
       </BrowserRouter>
