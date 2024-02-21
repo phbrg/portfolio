@@ -1,35 +1,36 @@
-.Nav {
+nav {
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: end;
   flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  height: auto;
-  gap: 0 1vw;
-  padding: 1vh 0;
-}
+  width: 100vw;
+  padding: 1vh 1vw;
 
-.Nav * {
-  font-family: JetBrains Mono;
-  font-weight: 400;
+  & .button {
+    font-size: 1vw;
+    font-size: 500;
+    background-color: transparent;
+    padding: 1vh 1vw;
+    border-radius: 5px;
+  }
 }
 
 .active {
   cursor: default;
   color: var(--gray);
-  font-weight: 500;
 }
 
 .inactive:hover {
-  color: var(--red);
+  /* color: var(--blue); */
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 @media screen and (max-width: 768px) {
-  .Nav {
-    gap: 0 4vw;
+  nav {
+    gap: 0 1.5vh;
   }
-  .Nav * {
-    font-size: 1.6vh;
+  nav .button {
+    font-size: 1.5vh;
   }
 }

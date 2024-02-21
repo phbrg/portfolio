@@ -1,57 +1,49 @@
-.NF {
+.NotFound {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 100%;
-  height: 60vh;
-  gap: 4vh 0;
-}
-
-.NF div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
+  height: 100vh;
+  width: 100vw;
   gap: 1vh 0;
-}
 
-.NF div h1 {
-  font-size: 4vw;
-  color: var(--dgray);
-}
+  & h1 {
+    font-size: 4vw;
+    font-weight: 400;
+    color: var(--gray);
+  }
 
-.NF div h2 {
-  font-size: 1.6vw;
-  font-weight: 500;
-  color: var(--lgray);
-}
+  & h2 {
+    font-size: 2vw;
+    font-weight: 450;
 
-.NF .home {
-  color: var(--lgray);
-  border: 1px solid var(--vdgray);
-  padding: 1.4vh 1.8vw;
-  font-size: 1.2vw;
-  border-radius: 7px;
-}
+    & span {
+      color: var(--lgray);
+    }
+  }
 
-.NF .home:hover {
-  cursor: pointer;
-  color: #fff;
-  border: 1px solid var(--dgray);
+  & .button {
+    font-size: 1.2vw;
+
+    &:hover {
+      color: var(--blue);
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
-  .NF div h1 {
-    font-size: 6vh;
-  }
-  .NF div h2 {
-    font-size: 2vh;
-  }
-  .NF .home {
-    padding: 1vh 4vw;
-    font-size: 1.4vh;
+  .NotFound {
+    & h1 {
+      font-size: 5vh;
+    }
+
+    & h2 {
+      font-size: 2.5vh;
+    }
+
+    & .button {
+      font-size: 2vh;
+    }
   }
 }

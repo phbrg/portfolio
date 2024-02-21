@@ -3,106 +3,76 @@
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  flex-wrap: wrap;
-  width: 100%;
+  width: 49%;
   height: auto;
-  padding: 2.6vh 1.4vw;
-  gap: 1vh 0;
-  background-color: var(--bg);
+  border: 1px solid var(--dgray);
   border-radius: 10px;
-  border: 1px solid var(--vdgray);
-  transition: 1;
-}
+  padding: 2vh 1vw;
+  gap: 1.5vh 0;
 
-.Card:hover {
-  transform: scale(1.015);
-  background-color: #030303;
-}
+  &:hover {
+    transform: scale(1.01);
+    background-color: #040404;
+  }
 
-.Card .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  height: auto;
-}
+  & h1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.5vw;
+    font-weight: 500;
+    
+    & span {
+      font-size: 1vw;
+      font-weight: 450;
+      color: var(--gray);
+    }
+  }
 
-.Card .header h1 {
-  font-size: 1.5vw;
-  font-weight: 800;
-}
+  & h2 {
+    font-size: 1vw;
+    font-weight: 400;
+    color: var(--lgray);
+  }
 
-.Card .header p {
-  font-size: 1vw;
-  font-weight: 400;
-  color: var(--lgray)
-}
+  & .tags {
+    display: flex;
+    gap: 0 0.7vw;
 
-.Card .description {
-  font-size: 1vw;
-  font-weight: 600;
-  color: var(--lgray);
-}
-
-.Card .techs {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  height: auto;
-  gap: 0 0.7vw;
-}
-
-.Card .techs p {
-  background-color: rgb(255, 255, 255);
-  color: #000;
-  font-family: JetBrains Mono;
-  font-size: 0.9vw;
-  font-weight: 900;
-  padding: 0.4vh 1vw;
-  border-radius: 5px;
+    & .tag {
+      font-weight: 400;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 0.5vh 1.2vw;
+      border-radius: 6px;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
   .Card {
-    padding: 1.2vh 2vw;
-    gap: 1vh 0;
-  }
-  .Card .header h1 {
-    font-size: 1.8vh;
-  }
-  .Card .header p {
-    font-size: 1vh;
-  }
-  .Card .description {
-    font-size: 1.2vh;
-  }
-  .Card .techs {
-    gap: 0 2vw;
-  }
-  .Card .techs p {
-    font-size: 1.2vh;
-    padding: 0.2vh 1.8vw;
-  }
-}
+    padding: 1vh 2vw;
+    width: 100%;
 
-@media screen and (max-width: 425px) {
-  .Card {
-    padding: 1.2vh 3vw;
-    gap: 1vh 0;
-  }
-  .Card h1 {
-    font-size: 1.6vh;
-  }
-  .Card .description {
-    font-size: 1.1vh;
-  }
-  .Card .techs p {
-    font-size: 1.2vh;
-    padding: 0.2vh 2.2vw;
+    & h1 {
+      font-size: 1.6vh;
+
+      & span {
+        font-size: 1vh;
+      }
+    }
+
+    & h2 {
+      font-size: 1.1vh;
+    }
+
+    & .tags {
+      gap: 0 2vw;
+
+      & .tag {
+        font-size: 1vh;
+        padding: 0.5vh 1.5vw;
+      }
+    }
   }
 }

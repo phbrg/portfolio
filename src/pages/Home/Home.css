@@ -1,121 +1,153 @@
 .Home {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 100%;
-  height: auto;
-  gap: 1vh 0;
-}
+  width: 100vw;
+  height: 100vh;
+  padding: 0 5vw;
 
-.Home header {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  height: auto;
-  padding: 3vh 1vw;
-  gap: 2vh 0;
-  border-bottom: 1px solid var(--vdgray);
-}
+  & .intro {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 
-.Home header .row {
-  display: flex;
-  width: 100%;
-  height: auto;
-}
+    & h1 {
+      width: 85%;
+      font-size: 2vw;
+      font-weight: 480;
 
-.Home header p {
-  font-weight: 500;
-  color: var(--lgray);
+      & span {
+        font-weight: 550;
+        background-image: linear-gradient(90deg, #00aaff, #f700ff);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
 
-  & span {
-    font-weight: 700;
+    & h2 {
+      font-size: 1.29vw;
+      font-weight: 350;
+      color: var(--lgray);
+    }
+
+    & .buttons {
+      display: flex;
+      padding: 3vh 0;
+      gap: 0 1vw;
+
+      & .button {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0 0.8vw;
+        font-weight: 480;
+        padding: 1.5vh 1.8vw;
+        color: #111;
+        background-color: #fff;
+        border-radius: 1000px;
+
+        & i {
+          color: #111;
+          font-size: 1vw;
+        }
+
+        &:hover {
+          filter: brightness(80%);
+        }
+
+        &:active {
+          transform: scale(0.98);
+        }
+      }
+    }
   }
-}
 
-.Home header img {
-  height: 80px;
-  width: 80px;
-  border-radius: 10px;
-}
+  & .links {
+    display: flex;
+    gap: 0 1vw;
 
-.Home header .texts {
-  border-right: 1px solid var(--vdgray);
-  padding: 0 1vw;
-}
+    & a {
+      cursor: pointer;
+      font-size: 2vw;
+      padding: 1.1vh 0.7vw;
+      border-radius: 6px;
 
-.Home header .texts h1 {
-  font-weight: 800;
-}
-
-.Home header .texts h2 {
-  font-family: JetBrains mono;
-  font-size: 1.29vw;
-  font-weight: 400;
-  color: var(--lgray);
-  gap: 0 5px;
-}
-
-.Home header .links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: auto;
-  gap: 0 1vw;
-  padding: 0 1vw;
-}
-
-.Home header .links i {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.8vw;
-  height: 50px;
-  width: 50px;
-  border-radius: 7px;
-  color: #fff;
-  background-color: transparent;
-}
-
-.Home header .links i:hover {
-  background-color: rgba(255, 255, 255, 0.15);
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
-  .Home header .row .texts {
-    padding: 0 3vw;
+  .Home {
+    & .intro {
+      & h1 {
+        font-size: 3.5vh;
+        width: 100%;
+      }
 
-    & h2 {
-      font-size: 1.8vh;
+      & h2 {
+        font-size: 2.3vh;
+      }
+
+      & .buttons {
+        gap: 0 2vw;
+        & .button {
+          font-size: 1.7vh;
+          padding: 1vh 3vw;
+
+          & i {
+            font-size: 1.5vh;
+          }
+        }
+      }
     }
-  }
-  .Home header .row .links i {
-    font-size: 2.4vh;
+
+    & .links {
+      & a {
+        font-size: 3.5vh;
+        padding: 1vh 2vw;
+      }
+    }
   }
 }
 
 @media screen and (max-width: 425px) {
-  .Home header img {
-    display: none;
-  }
-  .Home header .row .texts {
-    padding: 0 1vw;
+  .Home {
+    & .intro {
+      & h1 {
+        font-size: 2.5vh;
+        width: 100%;
+      }
 
-    & h1 {
-      font-size: 2vh;
+      & h2 {
+        font-size: 1.7vh;
+      }
+
+      & .buttons {
+        gap: 0 2vw;
+        & .button {
+          font-size: 1.2vh;
+          padding: 1vh 3.5vw;
+
+          & i {
+            font-size: 1.4vh;
+          }
+        }
+      }
     }
 
-    & h2 {
-      font-size: 1.4vh;
+    & .links {
+      & a {
+        font-size: 2.5vh;
+        padding: 1vh 2vw;
+      }
     }
-  }
-  .Home header .row .links i {
-    font-size: 2.6vh;
   }
 }

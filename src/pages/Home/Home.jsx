@@ -1,36 +1,32 @@
-import me from '../../assets/me.jfif'
-
-import List from '../../components/List/List'
+import { NavLink } from 'react-router-dom'
+import { toast } from 'sonner'
 
 import './Home.css'
 
-const Home = () => {
+export const Home = () => {
+  const handleOnClick = () => {
+    navigator.clipboard.writeText('pedrohenriquebatistabergamin@gmail.com')
+    .then(() => {
+      toast(<p className='toast'>✅ My email was copied to your clipboard.</p>);
+    });
+  }
+
   return (
-    <div className='Home'>
-      <header>
-        <div className="row">
-          <img src={me} alt="me" />
-          <div className="texts">
-            <h1>Pedro Henrique</h1>
-            <h2>_FullStack Developer</h2>
-          </div>
-          <div className="links">
-            <a href="https://github.com/phbrg" target='_blank'><i className="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/pedro-henrique-b-bergamin/" target='_blank'><i className="fa-brands fa-linkedin"></i></a>
-            <a href="https://docs.google.com/document/d/1Xi74-yLk5FwePZGwjUK-6YRvXMjik-QamVtv3uLX3ls/edit?usp=sharing" target='_blank'><i className="fa-solid fa-file"></i></a>
-          </div>
+    <section className='Home'>
+      <div className="intro">
+        <h1>Hello World, I'm Pedro Henrique - <span>FullStack Developer</span></h1>
+        <h2>Turning dreams into reality with code lines.</h2>
+        <div className="buttons">
+          <NavLink to='/projects' className='button'>View Projects <i className="fa-solid fa-arrow-trend-up"></i></NavLink>
+          <a onClick={handleOnClick} className='button'>Let's build something?</a>
         </div>
-        <p>I am a <span>Full Stack Developer</span>, specializing in <span>Back-End Development</span> with <span>Node.js</span>. Currently, I am expanding my skills by studying <span>C# & .NET</span>.</p>
-      </header>
-      <List title='Knowledge' elements={[
-        'Node.js', 
-        'React.js', 
-        'SQL', 
-        'PostgreSQL', 
-        'MySQL',
-        ]} />
-    </div>
+      </div>
+      <div className="links">
+        <a href="https://github.com/phbrg" target='_blank'><i className="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/pedro-henrique-b-bergamin/" target='_blank'><i className="fa-brands fa-linkedin"></i></a>
+        <a href="https://docs.google.com/document/d/1Xi74-yLk5FwePZGwjUK-6YRvXMjik-QamVtv3uLX3ls/edit?usp=sharing" target='_blank'><i className="fa-solid fa-file"></i></a>
+        <a onClick={handleOnClick}><i class="fa-solid fa-at"></i></a>
+      </div>
+    </section>
   )
 }
-
-export default Home

@@ -1,17 +1,13 @@
-import './NotFound.css'
-
 import { NavLink } from 'react-router-dom'
 
-const NotFound = () => {
+import './NotFound.css'
+
+export const NotFound = () => {
   return (
-    <section className='NF'>
-      <div>
-        <h1>404</h1>
-        <h2>Error, page not found...</h2>
-      </div>
-      <NavLink to="/" className='home'>Home page</NavLink>
+    <section className='NotFound'>
+      <h1>404</h1>
+      <h2><span>ERROR:</span> Page Not Found.</h2>
+      <NavLink to='/' className='button'>Get back home</NavLink>
     </section>
   )
 }
-
-export default NotFound
