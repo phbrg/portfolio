@@ -52,19 +52,30 @@ body {
 .toast {
   color: #111;
   font-size: 1vw;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .card-container {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
-  flex-direction: row;
+  justify-content: flex-start;
+  flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
   max-width: 100%;
   height: auto;
-  gap: 2vh 1vw;
+  gap: 1.5vh 0;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 5vh 5vw;
+  width: 100vw;
+  min-height: 100vh;
 }
 
 @media screen and (max-width: 768px) {

@@ -1,4 +1,5 @@
 nav {
+  z-index: 1;
   position: fixed;
   display: flex;
   align-items: center;
@@ -6,14 +7,23 @@ nav {
   flex-direction: row;
   width: 100vw;
   padding: 1vh 1vw;
-  background-color: var(--bg);
 
-  & .button {
-    font-size: 1vw;
-    font-size: 500;
-    background-color: transparent;
-    padding: 1vh 1vw;
-    border-radius: 5px;
+  & div {
+    display: flex;
+    gap: 0 0.5vw;
+    padding: 1vh 0.5vw;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    border: 1px solid var(--dgray);
+
+    & .button {
+      font-size: 1vw;
+      font-size: 500;
+      background-color: transparent;
+      padding: 1vh 1vw;
+      border-radius: 5px;
+    }
   }
 }
 
@@ -24,14 +34,20 @@ nav {
 
 .inactive:hover {
   /* color: var(--blue); */
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 @media screen and (max-width: 768px) {
   nav {
     gap: 0 1.5vh;
-  }
-  nav .button {
-    font-size: 1.5vh;
+
+    & div {
+      gap: 0 2vw;
+      padding: 0.3vw 2vw;
+
+      & .button {
+        font-size: 1.5vh;
+      }
+    }
   }
 }

@@ -1,13 +1,6 @@
 .Home {
-  display: flex;
   align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 100vw;
-  height: 100vh;
-  padding: 0 5vw;
-
+  
   & .intro {
     display: flex;
     align-items: flex-start;
