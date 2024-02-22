@@ -73,9 +73,6 @@ section {
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 5vh 5vw;
-  width: 100vw;
-  min-height: 100vh;
 }
 
 @media screen and (max-width: 768px) {

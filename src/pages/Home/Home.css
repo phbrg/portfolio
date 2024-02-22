@@ -1,5 +1,8 @@
 .Home {
   align-items: flex-start;
+  padding: 5vh 5vw;
+  width: 100vw;
+  min-height: 100vh;
   
   & .intro {
     display: flex;

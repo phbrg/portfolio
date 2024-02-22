@@ -1,5 +1,8 @@
 .NotFound {
   gap: 1vh 0;
+  padding: 5vh 5vw;
+  width: 100vw;
+  min-height: 100vh;
 
   & h1 {
     font-size: 4vw;

@@ -2,6 +2,9 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 2vh 0;
+  padding: 5vh 5vw;
+  width: 100vw;
+  min-height: 100vh;
 
   & .other-projects {
     width: 100%;
