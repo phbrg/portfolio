@@ -8,11 +8,11 @@ export const Projects = () => {
     <section className='Projects'>
       <Header title='Projects' description='Click on the project to see more about it.'/>
       <div className="card-container">
-        <Card title='Market Manager' date='Jan, 2024 - Present' description='An node.js market ( shop/store ) manager, with an interactive dashboard and many functions.' tags={['Node.js', 'React.js', 'PostgreSQL']} link='https://github.com/phbrg/market-manager' blank={true}/>
-        <Card title='Restaurant Manager' date='Nov, 2023 - Present' description='A restaurant management web application focused on facilitating customer orders and restaurant organization.' tags={['Node.js', 'Angular', 'PostgreSQL']} link='https://github.com/phbrg/restaurant-manager' blank={true}/>
-        <Card title='Wordle' date='Dec, 2023 - Dec, 2023' description='A game where the user needs to guess the word by guessing the letters, it was my first project using React.js.' tags={['React.js']} link='https://github.com/phbrg/wordle-react' blank={true}/>
-        <Card title='Arkadius' date='Oct, 2023 - Oct, 2023' description='Arkadius is a social network for users to create and customize profiles as they wish, with the ability to modify content and add links.' tags={['Node.js', 'Handlebars', 'PostgreSQL']} link='https://github.com/phbrg/arkadius' blank={true}/>
-        <Card title='Cashflow' date='Nov, 2023 - Nov, 2023' description='Cashflow is a financial management app where users manage their money and receive investment advice. It was part of a school competition.' tags={['Node.js', 'Handlebars', 'PostgreSQL']} link='https://github.com/phbrg/cashflow' blank={true}/>
+        <Card title='Market Manager' date='Jan, 2024 - Present' description='📊 Node.js and React.js Business Manager with an Interactive Dashboard with Graphs and Management Systems.' tags={['Node.js', 'React.js', 'PostgreSQL']} link='https://github.com/phbrg/market-manager' blank={true}/>
+        <Card title='Restaurant Orders' date='Nov, 2023 - Present' description='🍔 Node.js and Angular Restaurant Food Order Web App with an Interactive Menu and Dashboard.' tags={['Node.js', 'Angular', 'PostgreSQL']} link='https://github.com/phbrg/restaurant-order' blank={true}/>
+        <Card title='Wordle' date='Dec, 2023 - Dec, 2023' description='🧶 Wordle: A React.js game where users have to guess the word by the letter.' tags={['React.js']} link='https://github.com/phbrg/wordle-react' blank={true}/>
+        <Card title='Arkadius' date='Oct, 2023 - Oct, 2023' description='📸Node.js Social Media Platform with Personal Profile, Profile Customization and Share Link on Profile.' tags={['Node.js', 'Handlebars', 'PostgreSQL']} link='https://github.com/phbrg/arkadius' blank={true}/>
+        <Card title='Cashflow' date='Nov, 2023 - Nov, 2023' description='💰 Node.js Financial Management App to Manage Your Money and Receive Investment Advice.' tags={['Node.js', 'Handlebars', 'PostgreSQL']} link='https://github.com/phbrg/cashflow' blank={true}/>
       </div>
       <h3 className='other-projects'>You can find more of my projects <a target='_blank' href="https://github.com/phbrg?tab=repositories">here</a></h3>
     </section>
