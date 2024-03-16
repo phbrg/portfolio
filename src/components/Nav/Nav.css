@@ -10,14 +10,15 @@ nav {
 
   & div {
     display: flex;
-    padding: 1vh 0.5vw;
+    padding: 0.7vh 0.5vw;
+    gap: 0 5px;
     background-color: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(3px);
     border-radius: 10px;
     border: 1px solid var(--dgray);
 
     & .button {
-      font-size: 1vw;
+      font-size: 0.8vw;
       font-size: 500;
       background-color: transparent;
       padding: 1vh 1vw;
