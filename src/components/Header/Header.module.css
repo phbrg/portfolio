@@ -12,13 +12,13 @@
 }
 
 @media screen and (max-width: 768px) {
-  header {
+  .Header {
     & h1 {
-      font-size: 3vh;
+      font-size: 1.8vh;
     }
 
     & h2 {
-      font-size: 1.7vh;
+      font-size: 1.2vh;
     }
   }
 }

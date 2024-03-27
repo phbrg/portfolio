@@ -127,17 +127,18 @@
       }
 
       & h2 {
-        font-size: 1.7vh;
+        font-size: 1.8vh;
+        font-weight: 420;
       }
 
       & .buttons {
         gap: 0 2vw;
         & .button {
-          font-size: 1.2vh;
-          padding: 1vh 3.5vw;
+          font-size: 1.4vh;
+          padding: 0.8vh 4vw;
 
           & .arrow {
-            font-size: 1.29vh;
+            font-size: 1.4vh;
           }
         }
       }

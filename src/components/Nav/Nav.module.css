@@ -41,11 +41,12 @@ nav {
     gap: 0 1.5vh;
 
     & div {
+      border-radius: 6px;
       gap: 0 2vw;
-      padding: 0.3vw 2vw;
+      padding: 0.2vh 3vw;
 
       & .button {
-        font-size: 1.5vh;
+        font-size: 1.2vh;
       }
     }
   }

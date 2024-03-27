@@ -57,7 +57,9 @@
 @media screen and (max-width: 768px) {
   .Card {
     padding: 1vh 2vw;
+    gap: 0.5vh 0;
     width: 100%;
+    border-radius: 5px;
 
     & h1 {
       font-size: 1.6vh;
@@ -75,8 +77,9 @@
       gap: 0 2vw;
 
       & .tag {
-        font-size: 1vh;
-        padding: 0.5vh 1.5vw;
+        font-size: 0.9vh;
+        font-weight: 300;
+        padding: 0.3vh 2vw;
       }
     }
   }
