@@ -1,7 +1,7 @@
-header {
+.Header {
   & h1 {
     font-size: 2vw;
-    font-weight: 450;
+    font-weight: 500;
   }
 
   & h2 {

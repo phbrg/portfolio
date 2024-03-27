@@ -29,8 +29,11 @@
   resize: none;
   outline: none;
   border: 0;
-  color: var(--text);
   scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a {
+  color: var(--text);
 }
 
 body {
@@ -41,11 +44,11 @@ body {
 }
 
 :root {
-  --bg: #0e0d11;
+  --bg: #0c0c0f;
   --text: rgb(255, 255, 255);
-  --lgray: #b0adc0;
-  --gray: #474554;
-  --dgray: #26252d;
+  --lgray: #acaab3;
+  --gray: #45444c;
+  --dgray: #202024;
   --blue: #4867e6;
 }
 
@@ -54,7 +57,7 @@ body {
   font-weight: 500;
 }
 
-.card-container {
+.cardContainer {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;

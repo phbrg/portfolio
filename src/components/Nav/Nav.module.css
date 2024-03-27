@@ -1,0 +1,52 @@
+nav {
+  z-index: 1;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: row;
+  width: 100vw;
+  padding: 1vh 1vw;
+
+  & div {
+    display: flex;
+    padding: 0.7vh 0.5vw;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    & .button {
+      font-size: 0.9vw;
+      font-weight: 400;
+      background-color: transparent;
+      padding: 1vh 1vw;
+      border-radius: 5px;
+    }
+  }
+}
+
+.active {
+  cursor: default;
+  color: var(--gray);
+}
+
+.inactive:hover {
+  /* color: var(--blue); */
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    gap: 0 1.5vh;
+
+    & div {
+      gap: 0 2vw;
+      padding: 0.3vw 2vw;
+
+      & .button {
+        font-size: 1.5vh;
+      }
+    }
+  }
+}

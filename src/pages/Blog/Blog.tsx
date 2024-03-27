@@ -3,7 +3,7 @@ import json from '../../../posts.json'
 import { Header } from '../../components/Header/Header'
 import { Card } from '../../components/Card/Card'
 
-import './Blog.css'
+import styles from './Blog.module.css'
 
 export const Blog = () => {
   const reversedPosts = [];
@@ -13,12 +13,13 @@ export const Blog = () => {
   }
 
   return (
-    <section className='Blog'>
-      <Header title='Blog' description='Click on the post to read.'/>
-      <div className="card-container">
+    <section className={styles.Blog}>
+      <Header title='Blog' description='_Click on the post to read.'/>
+      <div className="cardContainer">
         {
-          reversedPosts.map((post) => (
+          reversedPosts.map((post, key) => (
             <Card 
+            key={key}
             title={post.title} 
             date={post.date}
             description={post.description}

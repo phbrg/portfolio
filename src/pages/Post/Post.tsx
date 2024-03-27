@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom';
 
 import json from '../../../posts.json'
 
-import './Post.css'
+import styles from './Post.module.css'
 
 export const Post = () => {
   const { id } = useParams();
@@ -13,19 +13,23 @@ export const Post = () => {
   }
 
   return (
-    <section className='Post'>
+    <section className={styles.Post}>
       <header>
-        <h1>{post.title}</h1>
-        <p>{post.date}</p>
+        {
+          post && <>
+          <h1>{post.title}</h1>
+          <p>{post.date}</p>
+          </>
+        }
       </header>
       {
-        post.body.map((paragraph, key) => (
-          <p key={key} className='body'>{paragraph}</p>
+        post && post.body.map((paragraph, key) => (
+          <p key={key} className={styles.body}>{paragraph}</p>
         ))
       }
-      <div className="links">
+      <div className={styles.links}>
         {
-          post.links && post.links.map((link, key) => (
+          post && post.links && post.links.map((link: any, key: number) => (
             <a href={link.link} key={key}>{link.title}</a>
           ))
         }

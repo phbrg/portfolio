@@ -13,7 +13,8 @@
         "I didn't learn much at school because the teaching was very weak, but I started researching coding more, exploring what I could become and what coding careers I could pursue. Initially, I thought I wanted to be a front-end developer, building beautiful and large websites. However, when I discovered back-end development and Node.js, I abandoned the idea of becoming a front-end developer and just focused on back-end development with it.",
         "Currently, I have learned Node.js and built some projects with it. I have also learned and built projects with React.js (a front-end JavaScript framework). I am now learning C# .NET, some other technologies like Docker and Jest, and some other web development technologies."
       ],
-      "tags": ["Tech", "History"]
+      "tags": ["Tech", "History"],
+      "links": []
     }
   ]
 }
