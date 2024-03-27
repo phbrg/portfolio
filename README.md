@@ -1,5 +1,5 @@
 # Personal portfolio
-> This project is bootstrapped by Vite with:
+> This project is bootstrapped by Vite with: 
 
 <code>npm create vite@latest</code>
 
