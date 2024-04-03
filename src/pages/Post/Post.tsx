@@ -3,13 +3,26 @@ import { useParams } from 'react-router-dom';
 import json from '../../../posts.json'
 
 import styles from './Post.module.css'
+import { useState, useEffect } from 'react';
 
 export const Post = () => {
-  const { id } = useParams();
-  const post = json.posts.find((p) => p.id === Number(id));
+  let { lang } = useParams();
+  if(!lang || lang.toLocaleLowerCase() !== 'eng' && lang.toLocaleLowerCase() !== 'pt') window.location.href = '/pt'
 
-  if(!post) {
-    window.location.href = '/error'
+  const [userLang, setUserLang] = useState('');
+  useEffect(() => {
+    if(!userLang && lang) {
+      setUserLang(lang.toLocaleLowerCase());
+    }
+  }, [lang, userLang])
+
+  const { id } = useParams();
+  let post: any = 'awaiting';
+  if(lang == 'eng') post = json.eng.find((p) => p.id === Number(id));
+  if(lang == 'pt') post = json.pt.find((p) => p.id === Number(id));
+
+  if(!post && post !== 'awaiting') {
+    window.location.href = `/${userLang}/error`;
   }
 
   return (
@@ -23,7 +36,7 @@ export const Post = () => {
         }
       </header>
       {
-        post && post.body.map((paragraph, key) => (
+        post && post.body.map((paragraph: string, key: number) => (
           <p key={key} className={styles.body}>{paragraph}</p>
         ))
       }

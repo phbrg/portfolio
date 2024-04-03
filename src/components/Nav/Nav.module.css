@@ -3,10 +3,19 @@ nav {
   position: fixed;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: space-between;
   flex-direction: row;
   width: 100vw;
   padding: 1vh 1vw;
+
+  & .eng, .pt {
+    font-size: 0.7vw;
+    color: var(--lgray);
+
+    &:hover {
+      color: #fff;
+    }
+  }
 
   & div {
     display: flex;
@@ -22,31 +31,31 @@ nav {
       background-color: transparent;
       padding: 1vh 1vw;
       border-radius: 5px;
+      color: var(--lgray);
+      
+      &:hover {
+        color: #fff;
+        background-color: rgba(255, 255, 255, 0.05);
+      }
     }
   }
 }
 
-.active {
-  cursor: default;
-  color: var(--gray);
-}
-
-.inactive:hover {
-  /* color: var(--blue); */
-  background-color: rgba(255, 255, 255, 0.05);
-}
-
 @media screen and (max-width: 768px) {
   nav {
-    gap: 0 1.5vh;
+    padding: 1.2vh 2vh;
+
+    & .pt, .eng {
+      font-size: 1vh;
+    }
 
     & div {
       border-radius: 6px;
-      gap: 0 2vw;
-      padding: 0.2vh 3vw;
+      padding: 0.5vh;
 
       & .button {
         font-size: 1.2vh;
+        padding: 0.7vh 1vh;
       }
     }
   }

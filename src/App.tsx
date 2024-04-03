@@ -16,11 +16,11 @@ function App() {
       <BrowserRouter>
         <Nav />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/post/:id" element={<Post />} />
-          <Route path="*" element={<NotFound />}/>
+          <Route path="/:lang?" element={<Home />} />
+          <Route path="/:lang?/projects" element={<Projects />} />
+          <Route path="/:lang?/blog" element={<Blog />} />
+          <Route path="/:lang?/post/:id" element={<Post />} />
+          <Route path="/:lang?/*" element={<NotFound />}/>
         </Routes>
       </BrowserRouter>
     </>
