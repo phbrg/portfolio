@@ -4,7 +4,7 @@ import styles from './Nav.module.css'
 
 export const Nav = () => {
   const url = window.location.href;
-  let lang = url.split('5173/')[1];
+  let lang = url.split('.app/')[1];
   if(lang !== 'eng' && lang !== 'pt') lang = 'pt';
 
   return (
