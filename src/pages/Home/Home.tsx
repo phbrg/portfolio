@@ -37,11 +37,11 @@ export const Home = () => {
           </> }
           <div className={styles.buttons}>
             { userLang == 'eng' && <>
-              <NavLink to='/projects' className={styles.button}>View Projects <FaArrowTrendUp className={styles.arrow}/></NavLink>
+              <NavLink to='/eng/projects' className={styles.button}>View Projects <FaArrowTrendUp className={styles.arrow}/></NavLink>
               <a onClick={handleOnClick} className={styles.button}>Let's build something?</a>
             </> }
             { userLang == 'pt' && <>
-              <NavLink to='/projects' className={styles.button}>Ver projetos <FaArrowTrendUp className={styles.arrow}/></NavLink>
+              <NavLink to='/pt/projects' className={styles.button}>Ver projetos <FaArrowTrendUp className={styles.arrow}/></NavLink>
               <a onClick={handleOnClick} className={styles.button}>Vamos construir algo?</a>
             </> }
           </div>
