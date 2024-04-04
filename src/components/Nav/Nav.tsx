@@ -16,7 +16,8 @@ export const Nav = () => {
         { lang == 'eng' && <a href='/pt' className={styles.pt}>PORTUGUÊS</a> }
         <div>
           <NavLink to={`/${lang}`} className={styles.button}>Home</NavLink>
-          <NavLink to={`/${lang}/projects`} className={styles.button}>Projects</NavLink>
+          { lang == 'eng' && <NavLink to={`/${lang}/projects`} className={styles.button}>Projects</NavLink> }
+          { lang == 'pt' && <NavLink to={`/${lang}/projects`} className={styles.button}>Projetos</NavLink> }
           <NavLink to={`/${lang}/blog`} className={styles.button}>Blog</NavLink>
         </div>
       </nav>
