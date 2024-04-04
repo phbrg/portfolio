@@ -27,30 +27,35 @@ export const Home = () => {
     return (
       <section className={styles.Home}>
         <div className={styles.intro}>
-          { userLang == 'eng' && <>
-            <h1>Hello World, I'm Pedro Henrique - <span>FullStack Developer</span></h1>
-            <h2>_Turning dreams into reality with code lines.</h2>
-          </> }
-          { userLang == 'pt' && <>
-            <h1>Hello World, Eu sou Pedro Henrique - <span>FullStack Developer</span></h1>
-            <h2>_Tornando sonhos realidade com linhas de código.</h2>
-          </> }
+          <h1>
+            { 
+              userLang == 'eng' && <>Hello World, I'm Pedro Henrique - <span>FullStack Developer</span></> ||
+              userLang == 'pt' && <>Hello World, Eu sou Pedro Henrique - <span>FullStack Developer</span></> 
+            }
+          </h1>
+          <h2>
+            {
+              userLang == 'eng' && <>_Turning dreams into reality with code lines.</> ||
+              userLang == 'pt' && <>_Tornando sonhos realidade com linhas de código.</> 
+            }
+          </h2>
           <div className={styles.buttons}>
-            { userLang == 'eng' && <>
-              <NavLink to='/eng/projects' className={styles.button}>View Projects <FaArrowTrendUp className={styles.arrow}/></NavLink>
-              <a onClick={handleOnClick} className={styles.button}>Let's build something?</a>
-            </> }
-            { userLang == 'pt' && <>
-              <NavLink to='/pt/projects' className={styles.button}>Ver projetos <FaArrowTrendUp className={styles.arrow}/></NavLink>
-              <a onClick={handleOnClick} className={styles.button}>Vamos construir algo?</a>
-            </> }
+            <NavLink to={userLang == 'eng' && '/eng/projects' || '/pt/projects'} className={styles.button}>
+                {userLang == 'eng' && <>View Projects</> || userLang == 'pt' && <>Ver Projetos</>} 
+                <FaArrowTrendUp className={styles.arrow}/>
+            </NavLink>
+            <a onClick={handleOnClick} className={styles.button}>
+              {userLang == 'eng' && <>Let's build something?</> || userLang == 'pt' && <>Vamos construir algo?</> }
+            </a>
           </div>
         </div>
         <div className={styles.links}>
           <a href="https://github.com/phbrg" target='_blank'><FaGithub /></a>
           <a href="https://www.linkedin.com/in/pedro-henrique-b-bergamin/" target='_blank'><FaLinkedin /></a>
-          { userLang == 'eng' && <a href="https://docs.google.com/document/d/1NG3ZsTAPb9_DWhIYmWiTevGYCRo5xsd_9uaHZUjROxY/edit?usp=sharing" target='_blank'><FaFile /></a> }
-          { userLang == 'pt' && <a href="https://docs.google.com/document/d/1Xi74-yLk5FwePZGwjUK-6YRvXMjik-QamVtv3uLX3ls/edit?usp=sharing" target='_blank'><FaFile /></a> }
+          <a href={
+            userLang == 'eng' && 'https://docs.google.com/document/d/1NG3ZsTAPb9_DWhIYmWiTevGYCRo5xsd_9uaHZUjROxY/edit?usp=sharing' || 
+            'https://docs.google.com/document/d/1Xi74-yLk5FwePZGwjUK-6YRvXMjik-QamVtv3uLX3ls/edit?usp=sharing'
+          } target='_blank'><FaFile /></a>
           <a onClick={handleOnClick}><MdEmail /></a>
         </div>
       </section>

@@ -17,9 +17,18 @@ export const NotFound = () => {
   return (
     <section className={styles.NotFound}>
       <h1>404</h1>
-      { userLang == 'eng' && <h2><span>ERROR:</span> Page Not Found.</h2> }
-      { userLang == 'pt' && <h2><span>ERRO:</span> Página não encontrada.</h2> }
-      <NavLink to={`/${userLang}`} className={styles.button}>Get back home</NavLink>
+      <h2>
+        {
+          userLang == 'eng' && <><span>ERROR:</span> Page Not Found.</> ||
+          userLang == 'pt' && <><span>ERRO:</span> Página não encontrada.</>
+        }
+      </h2>
+      <NavLink to={`/${userLang}`} className={styles.button}>
+        {
+          userLang == 'eng' && <>Get back home</> ||
+          userLang == 'pt' && <>Voltar para home</>
+        }
+      </NavLink>
     </section>
   )
 }

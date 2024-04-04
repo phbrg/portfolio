@@ -1,4 +1,4 @@
-import json from '../../../posts.json'
+import json from '../../data/posts.json'
 
 import { Header } from '../../components/Header/Header'
 import { Card } from '../../components/Card/Card'
@@ -24,8 +24,10 @@ export const Blog = () => {
 
   return (
     <section className={styles.Blog}>
-      { userLang == 'eng' && <Header title='Blog' description='_Click on the post to read.'/> }
-      { userLang == 'pt' && <Header title='Blog' description='_Clique no post para ler.'/> }
+      <Header 
+        title='Blog' 
+        description={userLang == 'eng' && '_Click on the post to read.' || userLang == 'pt' && '_Clique no post para ler.'}
+      />
       <div className="cardContainer">
         {
           posts && posts.map((post, key) => (

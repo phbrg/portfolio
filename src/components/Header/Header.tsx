@@ -1,6 +1,6 @@
 import styles from './Header.module.css'
 
-export const Header = (data: { title: string, description: string }) => {
+export const Header = (data: { title: any, description: any }) => {
   return (
     <header className={styles.Header}>
       <h1>{data.title}</h1>

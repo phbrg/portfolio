@@ -1,0 +1,58 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Shift News:",
+      "date": "Mar, 2024 - Present",
+      "descriptioneng": "💻 Nest API that copies tab news/dev.to, where users can create and interact with posts.",
+      "descriptionpt": "💻 API em Nest que copia o tab news/dev.to, onde os usuarios podem criar e interagir com posts.",
+      "tags": ["Nest", "TypeScript", "PostgreSQL", "Prisma ORM", "JWT"],
+      "link": "https://github.com/phbrg/shift-news"
+    },
+    {
+      "id": 2,
+      "title": "Market Manager",
+      "date": "Jan, 2024 - Discontinued",
+      "descriptioneng": "📊 Node.js and React.js Business Manager with an Interactive Dashboard with Graphs and Management Systems.",
+      "descriptionpt": "📊 Gerenciador de empresas com uma dashboard interativa, com graficos e sistemas de gerencia em Node.js e React.js.",
+      "tags": ["Node.js", "React.js", "PostgreSQL", "Sequelize.js", "JWT"],
+      "link": "https://github.com/phbrg/market-manager"
+    },
+    {
+      "id": 3,
+      "title": "Restaurant Orders",
+      "date": "Nov, 2023 - Discontinued",
+      "descriptioneng": "🍔 Node.js and Angular Restaurant Food Order Web App with an Interactive Menu and Dashboard.",
+      "descriptionpt": "🍔 Sistema de pedidos de restaurante com uma dashboard e menu interativo em Node.js e Angular .",
+      "tags": ["Node.js", "Angular", "PostgreSQL", "Sequelize.js", "JWT"],
+      "link": "https://github.com/phbrg/restaurant-order"
+    },
+    {
+      "id": 4,
+      "title": "Wordle",
+      "date": "Dec, 2023 - Dec, 2023",
+      "descriptioneng": "🧶 A React.js game where users have to guess the word by the letter.",
+      "descriptionpt": "🧶 Um jogo onde os usuarios tem de adivinhar a palavra pela letra em React.js.",
+      "tags": ["React.js"],
+      "link": "https://github.com/phbrg/wordle-react"
+    },
+    {
+      "id": 5,
+      "title": "Arkadius",
+      "date": "Oct, 2023 - Oct, 2023",
+      "descriptioneng": "📸 Node.js Social Media Platform with Personal Profile, Profile Customization and Share Link on Profile.",
+      "descriptionpt": "📸 Rede social com perfil pessoal, customização de perfil e compartilhamento de links em Node.js.",
+      "tags": ["Node.js", "Handlebars", "PostgreSQL", "Sequelize.js"],
+      "link": "https://github.com/phbrg/arkadius"
+    },
+    {
+      "id": 6,
+      "title": "Cashflow",
+      "date": "Nov, 2023 - Nov, 2023",
+      "descriptioneng": "💰 Node.js Financial Management App to Manage Your Money and Receive Investment Advice.",
+      "descriptionpt": "💰 Aplicação de gerencia financeira em Node.js.",
+      "tags": ["Node.js", "Handlebars", "PostgreSQL", "Sequelize.js"],
+      "link": "https://github.com/phbrg/cashflow"
+    }
+  ]
+}

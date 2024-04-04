@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 
-import json from '../../../posts.json'
+import json from '../../data/posts.json'
 
 import styles from './Post.module.css'
 import { useState, useEffect } from 'react';
@@ -29,9 +29,10 @@ export const Post = () => {
     <section className={styles.Post}>
       <header>
         {
-          post && <>
-          <h1>{post.title}</h1>
-          <p>{post.date}</p>
+          post && 
+          <>
+            <h1>{post.title}</h1>
+            <p>{post.date}</p>
           </>
         }
       </header>
