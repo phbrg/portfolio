@@ -2,7 +2,7 @@
   "projects": [
     {
       "id": 1,
-      "title": "Shift News:",
+      "title": "Shift News",
       "date": "Mar, 2024 - Present",
       "descriptioneng": "💻 Nest API that copies tab news/dev.to, where users can create and interact with posts.",
       "descriptionpt": "💻 API em Nest que copia o tab news/dev.to, onde os usuarios podem criar e interagir com posts.",
