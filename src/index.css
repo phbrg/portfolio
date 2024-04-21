@@ -70,13 +70,8 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .toast {
-    font-size: 1.4vh;
-  }
-
   .card-container {
     flex-direction: column;
     width: 100%;
-    gap: 1vh 0;
   }
 }
