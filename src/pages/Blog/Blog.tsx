@@ -23,12 +23,12 @@ export const Blog = () => {
   if(lang == 'pt') posts = json.pt;
 
   return (
-    <section className={styles.Blog}>
+    <section className={`def ${styles.Blog}`}>
       <Header 
         title='Blog' 
         description={userLang == 'eng' && '_Click on the post to read.' || userLang == 'pt' && '_Clique no post para ler.'}
       />
-      <div className="cardContainer">
+      <div className="cardcontainer">
         {
           posts && posts.map((post, key) => (
             <Card 

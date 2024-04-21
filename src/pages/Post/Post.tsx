@@ -26,7 +26,7 @@ export const Post = () => {
   }
 
   return (
-    <section className={styles.Post}>
+    <section className={`def ${styles.Post}`}>
       <header>
         {
           post && 

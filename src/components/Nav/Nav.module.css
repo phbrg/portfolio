@@ -21,14 +21,14 @@ nav {
     display: flex;
     padding: 0.35vw;
     gap: 0 5px;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(3px);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 
     & .button {
       font-size: 0.9vw;
-      font-weight: 400;
+      font-weight: 300;
       background-color: transparent;
       padding: 1vh 1vw;
       border-radius: 5px;

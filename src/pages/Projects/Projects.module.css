@@ -10,7 +10,7 @@
     width: 100%;
     text-align: center;
     font-size: 1.1vw;
-    font-weight: 400;
+    font-weight: 300;
     color: var(--lgray);
 
     & a {

@@ -1,5 +1,5 @@
 .Home {
-  align-items: flex-start;
+  justify-content: center;
   padding: 5vh 5vw;
   width: 100vw;
   min-height: 100vh;
@@ -12,21 +12,21 @@
     flex-wrap: wrap;
 
     & h1 {
-      width: 85%;
+      width: 60%;
       font-size: 2vw;
-      font-weight: 480;
+      font-weight: 400;
 
       & span {
         background-color: #fff;
         color: var(--bg);
-        font-weight: 600;
+        font-weight: 500;
         padding: 0 0.2vw;
       }
     }
 
     & h2 {
       font-size: 1.29vw;
-      font-weight: 350;
+      font-weight: 300;
       color: var(--lgray);
     }
 

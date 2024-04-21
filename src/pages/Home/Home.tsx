@@ -20,17 +20,17 @@ export const Home = () => {
   const handleOnClick = () => {
     navigator.clipboard.writeText('pedrohenriquebatistabergamin@gmail.com')
     .then(() => {
-      if(lang?.toLocaleLowerCase() == 'eng') toast(<p className='toast'>✅ My email was copied to your clipboard.</p>);
-      if(lang?.toLocaleLowerCase() == 'pt') toast(<p className='toast'>✅ Meu email foi copiado para sua area de transferencia.</p>);
+      if(lang?.toLocaleLowerCase() == 'eng') toast.success('My email was copied to your clipboard.');
+      if(lang?.toLocaleLowerCase() == 'pt') toast.success('Meu email foi copiado para sua area de transferencia.');
     });
   }
     return (
-      <section className={styles.Home}>
+      <section className={`def ${styles.Home}`}>
         <div className={styles.intro}>
           <h1>
             { 
               userLang == 'eng' && <>Hello World, I'm Pedro Henrique - <span>FullStack Developer</span></> ||
-              userLang == 'pt' && <>Hello World, Eu sou Pedro Henrique - <span>FullStack Developer</span></> 
+              userLang == 'pt' && <>Hello World, Eu sou o Pedro Henrique - <span>FullStack Developer</span></> 
             }
           </h1>
           <h2>

@@ -5,14 +5,13 @@
   flex-direction: column;
   width: 100%;
   height: auto;
-  border: 1px solid var(--dgray);
-  border-radius: 10px;
-  padding: 2vh 1vw;
+  padding: 1.6vw;
   gap: 1.5vh 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
   &:hover {
-    transform: scale(1.01);
-    background-color: rgba(0, 0, 0, 0.2);
+    transform: scale(1.006);
+    background-color: rgba(0, 0, 0, 0.4);
   }
 
   & h1 {
@@ -21,7 +20,7 @@
     justify-content: space-between;
     width: 100%;
     font-size: 1.4vw;
-    font-weight: 450;
+    font-weight: 400;
     
     & span {
       font-size: 1vw;
@@ -32,7 +31,7 @@
 
   & h2 {
     font-size: 1vw;
-    font-weight: 400;
+    font-weight: 300;
     color: var(--lgray);
   }
 
@@ -42,7 +41,7 @@
 
     & .tag {
       font-size: 0.9vw;
-      font-weight: 420;
+      font-weight: 300;
       background-color: rgba(255, 255, 255, 0.1);
       padding: 0.5vh 0.6vw;
       border-radius: 5px;
@@ -56,30 +55,30 @@
 
 @media screen and (max-width: 768px) {
   .Card {
-    padding: 1vh 2vw;
-    gap: 0.5vh 0;
+    padding: 2vh;
+    gap: 1vh 0;
     width: 100%;
-    border-radius: 5px;
 
     & h1 {
-      font-size: 1.6vh;
+      font-size: 2vh;
 
       & span {
-        font-size: 1vh;
+        font-size: 1.2vh;
       }
     }
 
     & h2 {
-      font-size: 1.1vh;
+      font-size: 1.6vh;
     }
 
     & .tags {
       gap: 0 2vw;
 
       & .tag {
-        font-size: 0.9vh;
+        font-size: 1vh;
         font-weight: 300;
-        padding: 0.3vh 2vw;
+        border-radius: 3px;
+        padding: 0.3vh 1vw;
       }
     }
   }

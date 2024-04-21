@@ -19,12 +19,12 @@ export const Projects = () => {
   }, [lang, userLang])
 
   return (
-    <section className={styles.Projects}>
+    <section className={`def ${styles.Projects}`}>
       <Header 
         title={userLang == 'eng' && 'Projetcs' || userLang == 'pt' && 'Projetos'} 
         description={userLang == 'eng' && '_Click on the project to see more about it.' || userLang == 'pt' && '_Clique no projeto para ver mais sobre.'} 
       />
-      <div className='cardContainer'>
+      <div className='cardcontainer'>
         { 
           json.projects && json.projects.map((project) => (
             <Card 

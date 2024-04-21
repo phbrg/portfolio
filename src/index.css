@@ -20,12 +20,8 @@
   border: none;
   box-shadow: none;
   box-sizing: border-box;
-  font-style: normal;
-  font-family: Rubik;
   margin: 0;
   transition: all 0.2s ease-in-out;
-  text-decoration: none;
-  letter-spacing: 0.5px;
   resize: none;
   outline: none;
   border: 0;
@@ -34,6 +30,10 @@
 
 h1, h2, h3, h4, h5, h6, p, span, a {
   color: var(--text);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  font-style: normal;
+  font-family: Rubik;
 }
 
 body {
@@ -52,12 +52,7 @@ body {
   --blue: #4867e6;
 }
 
-.toast {
-  color: #111;
-  font-weight: 500;
-}
-
-.cardContainer {
+.cardcontainer {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -66,13 +61,10 @@ body {
   width: 100%;
   max-width: 100%;
   height: auto;
-  gap: 1.5vh 0;
 }
 
-section {
+.def {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
 }

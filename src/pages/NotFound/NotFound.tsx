@@ -15,7 +15,7 @@ export const NotFound = () => {
   }, [lang, userLang])
 
   return (
-    <section className={styles.NotFound}>
+    <section className={`def ${styles.NotFound}`}>
       <h1>404</h1>
       <h2>
         {

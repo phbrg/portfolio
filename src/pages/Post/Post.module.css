@@ -1,5 +1,5 @@
 .Post {
-  align-items: flex-start;
+  justify-content: center;
   gap: 1vh 0;
   padding: 5vh 5vw;
   width: 100vw;

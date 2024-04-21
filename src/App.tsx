@@ -12,7 +12,7 @@ import { NotFound } from './pages/NotFound/NotFound'
 function App() {
   return (
     <>
-      <Toaster />
+      <Toaster richColors />
       <BrowserRouter>
         <Nav />
         <Routes>
