@@ -1,4 +1,6 @@
 .NotFound {
+  align-items: center;
+  justify-content: center;
   gap: 1vh 0;
   padding: 5vh 5vw;
   width: 100vw;
@@ -12,9 +14,10 @@
 
   & h2 {
     font-size: 2vw;
-    font-weight: 450;
+    font-weight: 300;
 
     & span {
+      font-weight: 400;
       color: var(--lgray);
     }
   }
@@ -22,10 +25,10 @@
   & .button {
     font-size: 1.2vw;
     color: var(--blue);
-    text-decoration: underline transparent;
+    text-decoration: 1px underline transparent;
 
     &:hover {
-      text-decoration: underline;
+      text-decoration: 1px underline;
     }
   }
 }

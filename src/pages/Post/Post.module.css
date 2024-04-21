@@ -1,7 +1,7 @@
 .Post {
   justify-content: center;
   gap: 1vh 0;
-  padding: 5vh 5vw;
+  padding: 0 3vw;
   width: 100vw;
   min-height: 100vh;
 
@@ -13,14 +13,25 @@
     padding: 2vh 0;
 
     & h1 {
-      font-weight: 500;
+      font-size: 1.6vw;
+      font-weight: 400;
       color: var(--blue);
     }
 
     & p {
-      color: var(--gray);
-      font-weight: 450;
+      color: var(--lgray);
+      font-weight: 350;
     }
+  }
+
+  & .body {
+    font-size: 1vw;
+    font-weight: 300;
+  }
+
+  & img {
+    height: auto;
+    width: auto;
   }
 
   & .links {
@@ -34,8 +45,31 @@
 
     & a {
       font-size: 1.1vw;
+      font-weight: 350;
+      text-decoration: 1px underline transparent;
       color: var(--blue);
-      text-decoration: underline;
+
+      &:hover {
+        text-decoration: 1px underline;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Post {
+    & header {
+      & h1 {
+        font-size: 2vh;
+      }
+
+      & p {
+        font-size: 1.4vh;
+      }
+    }
+
+    & .body {
+      font-size: 1.5vh;
     }
   }
 }

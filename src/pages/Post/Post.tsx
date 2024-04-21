@@ -22,7 +22,7 @@ export const Post = () => {
   if(lang == 'pt') post = json.pt.find((p) => p.id === Number(id));
 
   if(!post && post !== 'awaiting') {
-    window.location.href = `/${userLang}/error`;
+    window.location.href = `/${lang}/error`;
   }
 
   return (
@@ -40,6 +40,12 @@ export const Post = () => {
         post && post.body.map((paragraph: string, key: number) => (
           <p key={key} className={styles.body}>{paragraph}</p>
         ))
+      }
+      {
+        post.image && 
+        <div>
+          <img src={post.image} alt="image" />
+        </div>
       }
       <div className={styles.links}>
         {
