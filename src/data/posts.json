@@ -16,22 +16,6 @@
       "tags": ["Tech", "History"],
       "links": [],
       "image": null
-    },
-    {
-      "id": 2,
-      "title": "I hate front-end",
-      "date": "21/04/2024",
-      "description": "Things that I hate in front-end and why I don't like front-end.",
-       "body": [
-        "Hello world,",
-        "As soon as I discovered back-end, I almost completely erased from my mind that initial idea of being a front-end developer. I started to dedicate myself entirely to evolving and improving my knowledge only in back-end, and I do not regret it. However, I still have to deal with front-end and its frameworks.",
-        "Currently, I use React.js as a front-end framework. It was the first one I had contact with and found the most practical, but, my God, how coding in this framework (and in all front-ends in general) is ''messy''! You don't divide the code in the right way, or when you do, you divide it too much. Solutions that should be simple become complex (like setting a global variable) and, in addition to all this complexity, I still have to think about UI/UX and design.",
-        "When I realized this, my desire to become a full-stack developer almost went down the drain. Despite still trying hard to learn and study the damn front-end, I get really angry with the way things are done. One example of this is returning HTML code inside a logic file. Like, why? Why don't we separate things? Besides having to deal with performance, even having to make several requests, deal with responses, load styles and images, and all this in a .tsx file that in the end returns things like <h1>Hello {user.name}, how are you?</h1>.",
-        "I really find it bizarre how front-end is done nowadays. It's hard to understand it like I understand back-end."
-      ],
-      "tags": ["Front-end", "Tech"],
-      "links": [],
-      "image": null
     }
   ],
   "pt": [
@@ -49,22 +33,6 @@
         "Atualmente, aprendi Node.js e construí alguns projetos com ele. Também aprendi e construí projetos com React.js (um framework front-end de JavaScript). Agora estou aprendendo Nest e algumas outras tecnologias como Docker e Jest."
       ],
       "tags": ["Tech", "Historia"],
-      "links": [],
-      "image": null
-    },
-    {
-      "id": 2,
-      "title": "Eu odeio front-end",
-      "date": "21/04/2024",
-      "description": "Coisas que me irritam e o motivo de eu não gostar de front-end.",
-       "body": [
-        "Hello world,",
-        "Assim que conheci o back-end, apaguei quase que totalmente da minha cabeça aquela ideia inicial de ser front-end. Passei a me dedicar inteiramente a evoluir e melhorar meus conhecimentos apenas no back-end, e não me arrependo. No entanto, ainda preciso lidar com front-end e seus frameworks.",
-        "Atualmente uso React.js como framework no front-end. Foi o primeiro que tive contato e achei mais prático, mas, meu Deus do céu, como codar nesse framework (e em todos os front-ends no geral) é ''porco''! Você não divide o código da maneira certa, ou quando divide, divide até demais. Soluções que deveriam ser simples se tornam complexas (como definir uma variável global) e, além de toda essa complexidade, ainda preciso pensar em UI/UX e design.",
-        "Quando percebi isso, minha vontade de me tornar um desenvolvedor full-stack quase foi por água abaixo. Apesar de ainda tentar duramente aprender e estudar o bendito front-end, fico realmente bravo com o jeito que as coisas são feitas. Um exemplo disso é retornar um código HTML dentro de um arquivo de lógica. Tipo, por quê? Que tal separarmos as coisas? Fora ter que lidar com desempenho, mesmo tendo que fazer vários requests, lidar com respostas, carregar estilos e imagens, e tudo isso em um arquivo .tsx que no final retornar coisas como <h1>Olá {user.name}, tudo bem?</h1>.",
-        "Eu realmente acho bizarro como o front-end é feito hoje em dia. É difícil entender ele como eu entendo o back-end."
-      ],
-      "tags": ["Front-end", "Tech"],
       "links": [],
       "image": null
     }
