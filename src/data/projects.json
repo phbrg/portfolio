@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Shift News",
-      "date": "Mar, 2024 - Present",
+      "date": "Mar, 2024 - Jun, 2024",
       "descriptioneng": "Nest API that copies tab news/dev.to, where users can create and interact with posts.",
       "descriptionpt": "API em Nest que copia o tab news/dev.to, onde os usuarios podem criar e interagir com posts.",
       "tags": ["Nest", "TypeScript", "PostgreSQL", "Prisma ORM", "JWT"],
