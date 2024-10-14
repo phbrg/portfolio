@@ -1,18 +1,12 @@
 import { NavLink, useParams } from 'react-router-dom'
 
 import styles from './NotFound.module.css'
-import { useState, useEffect } from 'react';
+
+import { languageManager } from '../../utils/language';
 
 export const NotFound = () => {
   let { lang } = useParams();
-  if(!lang || lang.toLocaleLowerCase() !== 'eng' && lang.toLocaleLowerCase() !== 'pt') window.location.href = '/pt'
-
-  const [userLang, setUserLang] = useState('');
-  useEffect(() => {
-    if(!userLang && lang) {
-      setUserLang(lang.toLocaleLowerCase());
-    }
-  }, [lang, userLang])
+  const userLang = languageManager(lang);
 
   return (
     <section className={`def ${styles.NotFound}`}>

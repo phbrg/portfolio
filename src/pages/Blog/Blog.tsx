@@ -4,19 +4,13 @@ import { Header } from '../../components/Header/Header'
 import { Card } from '../../components/Card/Card'
 
 import styles from './Blog.module.css'
-import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
+
+import { languageManager } from '../../utils/language'
 
 export const Blog = () => {
   let { lang } = useParams();
-  if(!lang || lang.toLocaleLowerCase() !== 'eng' && lang.toLocaleLowerCase() !== 'pt') window.location.href = '/pt'
-
-  const [userLang, setUserLang] = useState('');
-  useEffect(() => {
-    if(!userLang && lang) {
-      setUserLang(lang.toLocaleLowerCase());
-    }
-  }, [lang, userLang])
+  const userLang = languageManager(lang);
 
   let posts;
   if(lang == 'eng') posts = json.eng;

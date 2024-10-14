@@ -9,7 +9,7 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 
     & h1 {
       width: 60%;
@@ -17,16 +17,19 @@
       font-weight: 400;
 
       & span {
+        font-family: Fira Code;
         background-color: #fff;
         color: var(--bg);
-        font-weight: 500;
+        font-weight: 600;
         padding: 0 0.2vw;
       }
     }
 
     & h2 {
+      letter-spacing: 0px;
+      font-family: Fira Code;
       font-size: 1.29vw;
-      font-weight: 300;
+      font-weight: 450;
       color: var(--lgray);
     }
 

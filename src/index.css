@@ -29,11 +29,11 @@
 }
 
 h1, h2, h3, h4, h5, h6, p, span, a {
+  font-family: Rubik;
   color: var(--text);
   text-decoration: none;
   letter-spacing: 0.5px;
   font-style: normal;
-  font-family: Rubik;
 }
 
 body {
@@ -67,6 +67,11 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+}
+
+#tooltip {
+  font-family: Rubik;
+  background-color: var(--dgray);
 }
 
 @media screen and (max-width: 768px) {

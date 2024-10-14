@@ -3,18 +3,11 @@ import { useParams } from 'react-router-dom';
 import json from '../../data/posts.json'
 
 import styles from './Post.module.css'
-import { useState, useEffect } from 'react';
+import { languageManager } from '../../utils/language';
 
 export const Post = () => {
   let { lang } = useParams();
-  if(!lang || lang.toLocaleLowerCase() !== 'eng' && lang.toLocaleLowerCase() !== 'pt') window.location.href = '/pt'
-
-  const [userLang, setUserLang] = useState('');
-  useEffect(() => {
-    if(!userLang && lang) {
-      setUserLang(lang.toLocaleLowerCase());
-    }
-  }, [lang, userLang])
+  languageManager(lang);
 
   const { id } = useParams();
   let post: any = 'awaiting';

@@ -1,21 +1,16 @@
+import { Tooltip } from 'react-tooltip'
 import { FaArrowTrendUp, FaFile, FaGithub, FaLinkedin } from "react-icons/fa6";
 import { NavLink, useParams } from 'react-router-dom'
 import { toast } from 'sonner'
 
 import styles from './Home.module.css'
 import { MdEmail } from "react-icons/md";
-import { useEffect, useState } from "react";
+
+import { languageManager } from "../../utils/language";
 
 export const Home = () => {
   let { lang } = useParams();
-  if(!lang || lang.toLocaleLowerCase() !== 'eng' && lang.toLocaleLowerCase() !== 'pt') window.location.href = '/pt'
-
-  const [userLang, setUserLang] = useState('');
-  useEffect(() => {
-    if(!userLang && lang) {
-      setUserLang(lang.toLocaleLowerCase());
-    }
-  }, [lang, userLang])
+  const userLang = languageManager(lang);
 
   const handleOnClick = () => {
     navigator.clipboard.writeText('pedrohenriquebatistabergamin@gmail.com')
@@ -26,6 +21,7 @@ export const Home = () => {
   }
     return (
       <section className={`def ${styles.Home}`}>
+        <Tooltip id="tooltip" />
         <div className={styles.intro}>
           <h1>
             { 
@@ -50,13 +46,13 @@ export const Home = () => {
           </div>
         </div>
         <div className={styles.links}>
-          <a href="https://github.com/phbrg" target='_blank'><FaGithub /></a>
-          <a href="https://www.linkedin.com/in/pedro-henrique-b-bergamin/" target='_blank'><FaLinkedin /></a>
-          <a href={
+          <a data-tooltip-id="tooltip" data-tooltip-content="Github" data-tooltip-place="bottom" href="https://github.com/phbrg" target='_blank'><FaGithub /></a>
+          <a data-tooltip-id="tooltip" data-tooltip-content="Linkedin" data-tooltip-place="bottom" href="https://www.linkedin.com/in/pedro-henrique-b-bergamin/" target='_blank'><FaLinkedin /></a>
+          <a data-tooltip-id="tooltip" data-tooltip-content="CV" data-tooltip-place="bottom" href={
             userLang == 'eng' && 'https://docs.google.com/document/d/1NG3ZsTAPb9_DWhIYmWiTevGYCRo5xsd_9uaHZUjROxY/edit?usp=sharing' || 
             'https://docs.google.com/document/d/1Xi74-yLk5FwePZGwjUK-6YRvXMjik-QamVtv3uLX3ls/edit?usp=sharing'
           } target='_blank'><FaFile /></a>
-          <a onClick={handleOnClick}><MdEmail /></a>
+          <a data-tooltip-id="tooltip" data-tooltip-content="Email" data-tooltip-place="bottom" onClick={handleOnClick}><MdEmail /></a>
         </div>
       </section>
     )

@@ -8,7 +8,7 @@ export const Card = (data: { title: string, date: string, description: any, tags
       <div className={styles.tags}>
         {
           data.tags.map((tag, key) => (
-            <p className={styles.tag} key={key}><span>#</span> {tag}</p>
+            <p className={styles.tag} key={key}><span>#</span>{tag}</p>
           ))
         }
       </div>

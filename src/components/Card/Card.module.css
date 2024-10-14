@@ -23,8 +23,9 @@
     font-weight: 400;
     
     & span {
-      font-size: 1vw;
-      font-weight: 450;
+      font-family: Fira Code;
+      font-size: 0.9vw;
+      font-weight: 500;
       color: var(--gray);
     }
   }
@@ -40,9 +41,10 @@
     gap: 0 0.7vw;
 
     & .tag {
+      font-family: Fira Code;
       font-size: 0.9vw;
-      font-weight: 300;
-      background-color: rgba(255, 255, 255, 0.1);
+      font-weight: 500;
+      background-color: rgba(255, 255, 255, 0.05);
       padding: 0.5vh 0.6vw;
       border-radius: 5px;
 

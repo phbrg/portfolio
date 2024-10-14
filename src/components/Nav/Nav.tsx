@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import { Tooltip } from 'react-tooltip'
 
 import styles from './Nav.module.css'
 
@@ -9,11 +10,12 @@ export const Nav = () => {
 
   return (
     <>
+    <Tooltip id="tooltip" />
     {
       lang && 
       <nav>
-        { lang == 'pt' && <a href='/eng' className={styles.eng}>ENGLISH</a> }
-        { lang == 'eng' && <a href='/pt' className={styles.pt}>PORTUGUÊS</a> }
+        { lang == 'pt' && <a data-tooltip-id="tooltip" data-tooltip-content="Change Language" data-tooltip-place="right" href='/eng' className={styles.eng}>ENGLISH</a> }
+        { lang == 'eng' && <a data-tooltip-id="tooltip" data-tooltip-content="Mudar Idioma" data-tooltip-place="right" href='/pt' className={styles.pt}>PORTUGUÊS</a> }
         <div>
           <NavLink to={`/${lang}`} className={styles.button}>Home</NavLink>
           { lang == 'eng' && <NavLink to={`/${lang}/projects`} className={styles.button}>Projects</NavLink> }

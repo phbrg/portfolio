@@ -9,8 +9,11 @@ nav {
   padding: 1vh 1vw;
 
   & .eng, .pt {
+    background-color: var(--bg);
     font-size: 0.7vw;
     color: var(--lgray);
+    padding: 6px 12px;
+    border-radius: 1000px;
 
     &:hover {
       color: #fff;
