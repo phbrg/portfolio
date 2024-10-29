@@ -1,42 +1,31 @@
-import { useParams } from 'react-router-dom';
 import { Card } from '../../components/Card/Card'
-import { Header } from '../../components/Header/Header'
-
+import { Title } from '../../components/Title/Title'
 import json from '../../data/projects.json'
 
-import styles from './Projects.module.css'
-
-import { languageManager } from '../../utils/language';
-
-export const Projects = () => {
-  let { lang } = useParams();
-  const userLang = languageManager(lang);
-  
+export const Projects = (lang: any) => {
   return (
-    <section className={`def ${styles.Projects}`}>
-      <Header 
-        title={userLang == 'eng' && 'Projetcs' || userLang == 'pt' && 'Projetos'} 
-        description={userLang == 'eng' && '_Click on the project to see more about it.' || userLang == 'pt' && '_Clique no projeto para ver mais sobre.'} 
-      />
-      <div className='cardcontainer'>
-        { 
-          json.projects && json.projects.map((project) => (
+    <main>
+      <Title 
+        title={lang.lang == 'pt' && 'Projetos' || 'Projects'} 
+        desc={
+          lang.lang == 'pt' && <>Essa página lista os <span>{json.length}</span> principais projetos que venho desenvolvendo durante a minha jornada como programador. <a href="https://github.com/phbrg?tab=repositories" target='_blank'>Confira outros projetos em meu GitHub.</a></> || 
+          <>This page lists the <span>{json.length}</span> main projects I have been developing during my journey as a programmer. <a href="https://github.com/phbrg?tab=repositories" target='_blank'>Check out other projects on my GitHub.</a>.</>
+        }
+        />
+      <div className='cardBox'>
+        {
+          json.map((project) => (
             <Card 
-              key={project.id} 
-              title={project.title} 
-              date={project.date} 
-              description={userLang == 'eng' && project.descriptioneng || project.descriptionpt} 
+              key={project.id}
+              title={project.title}
+              logo={project.logo} 
+              date={lang.lang == 'pt' && project.datePt || project.dateEng} 
+              description={lang.lang == 'pt' && project.descPt || project.descEng} 
               tags={project.tags} link={project.link} blank={true}
             />
           ))
         }
       </div>
-      <h3 className={styles.otherProjects}>
-        { 
-          userLang == 'eng' && <>You can find more of my projects <a target='_blank' href="https://github.com/phbrg?tab=repositories">here</a></> || 
-          userLang == 'pt' && <>Você pode achar mais de meus projetos <a target='_blank' href="https://github.com/phbrg?tab=repositories">aqui</a></>
-        }
-      </h3>
-    </section>
+    </main>
   )
 }

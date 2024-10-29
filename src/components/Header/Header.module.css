@@ -1,26 +1,109 @@
 .Header {
-  & h1 {
-    font-size: 2vw;
-    font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 0 15%;
+  height: 8vh;
+  width: 100vw;
+
+  & .logo {
+    display: flex;
+    align-items: center;
+    gap: 0 5px;
+    font-size: 1.6vw;
+    font-weight: 600;
+    font-family: Fira Code;
+
+    & > * {
+      font-size: 1.5vw;
+      color: var(--green);
+    }
+
+    &:hover {
+      & > * {
+        filter: drop-shadow(0 0 7px var(--green));
+      }
+    }
   }
 
-  & h2 {
-    letter-spacing: 0px;
-    font-family: Fira Code;
-    font-size: 1.2vw;
-    font-weight: 450;
+  & nav {
+    display: flex;
+    align-items: center;
+    gap: 0 5px;
+    padding: 7px;
+    border-radius: 8px;
+    border: 1px solid var(--dgray);
+
+    & .btn {
+      font-size: 0.8vw;
+      letter-spacing: 0.1px;
+      padding: 7px 12.9px;
+      border-radius: 5px;
+      font-weight: 450;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      &:active {
+        transform: scale(0.97);
+      }
+    }
+  }
+
+  & .lang {
+    display: flex;
+    align-items: center;
+    gap: 0 8px;
+    font-size: 0.7vw;
+    font-weight: 500;
     color: var(--lgray);
+
+    & > * {
+      font-size: 1vw;
+      color: var(--green);
+    }
+
+    &:hover {
+      color: var(--text);
+    }
   }
 }
 
 @media screen and (max-width: 768px) {
   .Header {
-    & h1 {
-      font-size: 2.4vh;
+    justify-content: space-around;
+    padding: 0;
+    & .logo {
+      gap: 0 0;
+      font-size: 2vh;
+      font-weight: 450;
+  
+      & > * {
+        font-size: 1.8vh;
+      }
     }
+  }
 
-    & h2 {
-      font-size: 1.8vh;
+  & nav {
+    gap: 0 9px !important;
+    padding: 4px !important;
+    border-radius: 6px !important;
+
+    & > * {
+      font-size: 1.29vh !important;
+      padding: 5px 8px !important;
+      border-radius: 3px !important;
+    }
+  }
+
+  & .lang {
+    gap: 0 3px !important;
+    font-size: 1vh !important;
+
+    & > * {
+      font-size: 1.4vh !important;
     }
   }
 }

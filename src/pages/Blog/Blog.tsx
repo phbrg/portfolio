@@ -1,41 +1,40 @@
+import { Card } from '../../components/Card/Card'
+import { Title } from '../../components/Title/Title'
 import json from '../../data/posts.json'
 
-import { Header } from '../../components/Header/Header'
-import { Card } from '../../components/Card/Card'
-
-import styles from './Blog.module.css'
-import { useParams } from 'react-router-dom'
-
-import { languageManager } from '../../utils/language'
-
-export const Blog = () => {
-  let { lang } = useParams();
-  const userLang = languageManager(lang);
-
+export const Blog = (lang: any) => {
   let posts;
-  if(lang == 'eng') posts = json.eng;
-  if(lang == 'pt') posts = json.pt;
+  if(lang.lang == 'pt') {
+    posts = json.pt
+  } else {
+    posts = json.eng
+  }
 
   return (
-    <section className={`def ${styles.Blog}`}>
-      <Header 
+    <main>
+      <Title 
         title='Blog' 
-        description={userLang == 'eng' && '_Click on the post to read.' || userLang == 'pt' && '_Clique no post para ler.'}
-      />
-      <div className="cardcontainer">
+        desc={
+          lang.lang == 'pt' && <>Essa página lista os posts do meu blog. Clique no post para ler.</> || 
+          <>This page lists my blog posts. Click on the post to read</>
+        }
+        />
+      <div className='cardBox'>
         {
-          posts && posts.map((post, key) => (
+          posts.map((post) => (
             <Card 
-            key={key}
-            title={post.title} 
-            date={post.date}
-            description={post.description}
-            tags={post.tags} 
-            link={`/${userLang}/post/${post.id}`}
-            blank={false}/>
+              key={post.id}
+              title={post.title}
+              logo='blog'
+              date={post.date}
+              description={post.description}
+              tags={post.tags}
+              link={`/${lang.lang}/post/${post.id}`}
+              blank={false}
+            />
           ))
         }
       </div>
-    </section>
+    </main>
   )
 }

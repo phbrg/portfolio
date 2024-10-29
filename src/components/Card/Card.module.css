@@ -1,55 +1,86 @@
 .Card {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  gap: 0 1.5vw;
+  border: 2px solid var(--dgray);
+  padding: 25px;
+  border-radius: 10px;
   width: 100%;
-  height: auto;
-  padding: 1.6vw;
-  gap: 1.5vh 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
-  &:hover {
-    transform: scale(1.006);
-    background-color: rgba(0, 0, 0, 0.4);
+  & .logo {
+    font-size: 3vw;
+    color: var(--green);
   }
 
-  & h1 {
+  & .texts {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 100%;
-    font-size: 1.4vw;
-    font-weight: 400;
-    
-    & span {
-      font-family: Fira Code;
-      font-size: 0.9vw;
-      font-weight: 500;
-      color: var(--gray);
+    flex-direction: column;
+    gap: 9px 0;
+    padding: 0 0 0 1vw;
+    border-left: 2px solid var(--gray);
+    width: inherit;
+
+    & div {
+      gap: 5px 0;
+      & h1 {
+        font-size: 1.4vw;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+  
+        & span {
+          font-size: 0.85vw;
+          color: var(--lgray);
+          font-weight: 350;
+        }
+      }
+  
+      & h2 {
+        font-size: 1vw;
+        font-weight: 400;
+      }
+    }
+
+    & .tags {
+      display: flex;
+      gap: 0 10px;
+
+      & p {
+        font-size: 0.85vw;
+        font-weight: 400;
+
+        & span {
+          color: var(--lgray);
+        }
+      }
     }
   }
 
-  & h2 {
-    font-size: 1vw;
-    font-weight: 300;
-    color: var(--lgray);
-  }
+  &:hover {
+    transform: scale(1.01);
+    background-color: var(--dgray);
 
-  & .tags {
-    display: flex;
-    gap: 0 0.7vw;
+    & .logo {
+      filter: drop-shadow(0 0 10px rgba(72, 230, 117, 0.5));
+    }
 
-    & .tag {
-      font-family: Fira Code;
-      font-size: 0.9vw;
-      font-weight: 500;
-      background-color: rgba(255, 255, 255, 0.05);
-      padding: 0.5vh 0.6vw;
-      border-radius: 5px;
+    & .texts {
+      & div {
+        & h1 {
+          color: var(--green);
+        }
+      }
 
-      & span {
-        color: rgba(255, 255, 255, 0.3);
+      & .tags {
+        & p {
+          & span {
+            color: var(--green);
+          }
+        }
       }
     }
   }
@@ -57,30 +88,38 @@
 
 @media screen and (max-width: 768px) {
   .Card {
-    padding: 2vh;
-    gap: 1vh 0;
-    width: 100%;
+    gap: 0 1.5vh;
+    padding: 12px;
+    border: 1px solid var(--dgray);
+    border-radius: 6px;
 
-    & h1 {
-      font-size: 2vh;
+    & .logo {
+      font-size: 3.5vh;
+    }
 
-      & span {
-        font-size: 1.2vh;
+    & .texts {
+      padding: 0 10px;
+      border-left: 1px solid var(--dgray);
+      & div {
+        & h1 {
+          color: var(--green);
+          font-size: 1.4vh;
+
+          & span {
+            font-size: 1vh;
+          }
+        }
+
+        & h2 {
+          font-size: 1.2vh;
+        }
       }
-    }
 
-    & h2 {
-      font-size: 1.6vh;
-    }
-
-    & .tags {
-      gap: 0 2vw;
-
-      & .tag {
-        font-size: 1vh;
-        font-weight: 300;
-        border-radius: 3px;
-        padding: 0.3vh 1vw;
+      & .tags {
+        gap: 0 5px;
+        & p {
+          font-size: 1.1vh;
+        }
       }
     }
   }

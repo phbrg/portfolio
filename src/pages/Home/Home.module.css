@@ -1,156 +1,221 @@
 .Home {
+  align-items: flex-start;
   justify-content: center;
-  padding: 5vh 5vw;
-  width: 100vw;
-  min-height: 100vh;
-  
-  & .intro {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    /* flex-wrap: wrap; */
+  min-height: 90vh;
 
+  & > * {
+    margin: 1% 0;
+  }
+
+  & .head {
     & h1 {
-      width: 60%;
-      font-size: 2vw;
-      font-weight: 400;
-
+      font-size: 1.8vw;
+      font-weight: 550;
+  
       & span {
-        font-family: Fira Code;
-        background-color: #fff;
-        color: var(--bg);
-        font-weight: 600;
-        padding: 0 0.2vw;
+        font-weight: 650;
+        color: var(--green);
       }
     }
 
     & h2 {
-      letter-spacing: 0px;
       font-family: Fira Code;
-      font-size: 1.29vw;
+      font-size: 1.2vw;
       font-weight: 450;
       color: var(--lgray);
+      padding: 0 0 0 10px;
+      border-left: 4px solid var(--green);
     }
-
-    & .buttons {
+  
+    & .subtexts {
+      margin: 1.5% 0 0 0;
       display: flex;
-      padding: 3vh 0;
-      gap: 0 1vw;
-
-      & .button {
-        cursor: pointer;
+      gap: 0 10px;
+  
+      & p {
         display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 0 0.8vw;
-        font-size: 1.1vw;
-        font-weight: 480;
-        padding: 1.5vh 1.8vw;
-        color: #111;
-        background-color: #fff;
-        border-radius: 1000px;
-
-        & * {
-          color: #111;
-          font-size: 1.2vw;
+        font-size: 1vw;
+        color: var(--lgray);
+      }
+  
+      & .status {
+        gap: 0 7px;
+  
+        & .circleOut {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 14px;
+          width: 14px;
+          border-radius: 1000px;
+          background-color: rgb(0, 0, 0);
+          animation: circleAnim 0.4s linear 1s infinite alternate;
+  
+          & .circleIn {
+            height: 8px;
+            width: 8px;
+            border-radius: 1000px;
+            background-color: var(--green);
+          }
         }
-
-        &:hover {
-          filter: brightness(80%);
+      }
+  
+      & .location {
+        gap: 0 5px;
+        & > * {
+          color: var(--green);
         }
+      }
+    }
+  }
 
-        &:active {
-          transform: scale(0.98);
-        }
+  & .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0 10px;
+
+    & .contact {
+      background-color: #00000000;
+      border: 2px solid var(--gray);
+      color: var(--text);
+    }
+
+    & > * {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0 10px;
+      font-size: 1vw;
+      font-weight: 550;
+      background-color: #fff;
+      border: 2px solid #fff;
+      color: #000;
+      padding: 11px 25px;
+      border-radius: 1000px;
+
+      &:hover {
+        background-color: var(--green);
+        border: 2px solid var(--green);
+        color: #000;
+      }
+
+      &:active {
+        transform: scale(0.98);
       }
     }
   }
 
   & .links {
     display: flex;
-    gap: 0 1vw;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0 10px;
 
-    & a {
+    & .link {
+      cursor: pointer;
       display: flex;
       align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      font-size: 2vw;
-      padding: 0.65vw;
-      border-radius: 6px;
+      font-size: 1.6vw;
+      background-color: var(--bg);
+      border: 1px solid var(--dgray);
+      padding: 12px;
+      border-radius: 8px;
 
       &:hover {
-        background-color: rgba(255, 255, 255, 0.1);
+        /* border: 1px solid var(--green); */
+        background-color: var(--dgray);
+      }
+
+      &:active {
+        transform: scale(0.97);
       }
     }
   }
+}
+
+@keyframes circleAnim {
+  0% { background-color: rgb(0, 0, 0); }
+  100% { background-color: rgba(0, 255, 47, 0.3); }
 }
 
 @media screen and (max-width: 768px) {
   .Home {
-    & .intro {
-      & h1 {
-        font-size: 3.5vh;
-        width: 100%;
-      }
+    padding: 0 5%;
 
-      & h2 {
-        font-size: 2.3vh;
-      }
-
-      & .buttons {
-        gap: 0 2vw;
-        & .button {
-          font-size: 1.7vh;
-          padding: 1vh 3vw;
-
-          & .arrow {
-            font-size: 1.8vh;
-          }
-        }
-      }
+    & > * {
+      margin: 3% 0 !important;
     }
 
-    & .links {
-      & a {
-        font-size: 3.5vh;
-        padding: 1vh 2vw;
+    & .head {
+      & h1 {
+        font-size: 2.2vh;
+      }
+  
+      & h2 {
+        font-size: 1.29vh;
+        padding: 0 0 0 5px;
+        border-left: 2px solid var(--green);
+      }
+    
+      & .subtexts {
+        margin: 2% 0 0 0;
+        gap: 0 10px;
+    
+        & p {
+          font-size: 1.4vh;
+        }
+    
+        & .status {
+          & .circleOut {
+            height: 10px;
+            width: 10px;
+    
+            & .circleIn {
+              height: 6px;
+              width: 6px;
+            }
+          }
+        }
       }
     }
   }
-}
 
-@media screen and (max-width: 425px) {
-  .Home {
-    & .intro {
-      & h1 {
-        font-size: 2.5vh;
-        width: 100%;
-      }
-
-      & h2 {
-        font-size: 1.8vh;
-        font-weight: 420;
-      }
-
-      & .buttons {
-        gap: 0 2vw;
-        & .button {
-          font-size: 1.4vh;
-          padding: 0.8vh 4vw;
-
-          & .arrow {
-            font-size: 1.4vh;
-          }
-        }
-      }
+  & .buttons {
+    & .projects {
+      gap: 0 10px;
+      font-size: 1.4vh !important;
+      font-weight: 650 !important;
+      padding: 8px 20px !important;
     }
 
-    & .links {
-      & a {
-        font-size: 2.5vh;
-        padding: 1vh 2vw;
+    & .contact {
+      gap: 0 10px;
+      font-size: 1.4vh !important;
+      font-weight: 650 !important;
+      background-color: #00000000;
+      border: 1px solid #fff !important;
+      padding: 8px 20px !important;
+    }
+  }
+
+  & .links {
+    gap: 0 10px;
+
+    & .link {
+      font-size: 2.6vh !important;
+      border: 1px solid var(--dgray);
+      padding: 10px !important;
+      border-radius: 8px;
+
+      &:hover {
+        /* border: 1px solid var(--green); */
+        background-color: var(--dgray);
+      }
+
+      &:active {
+        transform: scale(0.97);
       }
     }
   }

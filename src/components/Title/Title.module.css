@@ -1,0 +1,50 @@
+.Title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  padding: 25px 0;
+  gap: 5px 0px;
+  border-bottom: 1px solid var(--dgray);
+  width: 100%;
+
+  & h1 {
+    font-size: 2vw;
+    font-weight: 600;
+    color: var(--green);
+  }
+
+  & h2 {
+    font-size: 1vw;
+    font-weight: 350;
+    color: var(--lgray);
+
+    & a {
+      font-size: 1vw;
+      font-weight: 350;
+      text-decoration: underline;
+
+      &:hover {
+        color: var(--green);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Title {
+    padding: 0 3%;
+    border: none;
+
+    & h1 {
+      font-size: 2.2vh;
+    }
+
+    & h2 {
+      font-size: 1.6vh;
+
+      & a {
+        font-size: 1.6vh;
+      }
+    }
+  }
+}

@@ -1,52 +1,34 @@
+import s from './Post.module.css'
+import json from '../../data/posts.json'
 import { useParams } from 'react-router-dom';
 
-import json from '../../data/posts.json'
+export const Post = (lang: any) => {
+  const { postId } = useParams();
+  let post;
+  if(lang.lang == 'pt') {
+    post = json.pt.find((p) => p.id === Number(postId));
+  } else {
+    post = json.eng.find((p) => p.id === Number(postId));
+  }
 
-import styles from './Post.module.css'
-import { languageManager } from '../../utils/language';
-
-export const Post = () => {
-  let { lang } = useParams();
-  languageManager(lang);
-
-  const { id } = useParams();
-  let post: any = 'awaiting';
-  if(lang == 'eng') post = json.eng.find((p) => p.id === Number(id));
-  if(lang == 'pt') post = json.pt.find((p) => p.id === Number(id));
-
-  if(!post && post !== 'awaiting') {
-    window.location.href = `/${lang}/error`;
+  if(!post) {
+    window.location.href = `/${lang.lang}/error`;
   }
 
   return (
-    <section className={`def ${styles.Post}`}>
+    <main className={s.Post}>
       <header>
-        {
-          post && 
-          <>
-            <h1>{post.title}</h1>
-            <p>{post.date}</p>
-          </>
-        }
+        <h1>{post?.title}</h1>
+        <p>{post?.date}</p>
       </header>
-      {
-        post && post.body.map((paragraph: string, key: number) => (
-          <p key={key} className={styles.body}>{paragraph}</p>
-        ))
-      }
-      {
-        post.image && 
-        <div>
-          <img src={post.image} alt="image" />
-        </div>
-      }
-      <div className={styles.links}>
+      <p className={s.body}>
         {
-          post && post.links && post.links.map((link: any, key: number) => (
-            <a href={link.link} key={key}>{link.title}</a>
+          post?.body.map((paragraph) => (
+            <>{paragraph} <br /><br /></>
           ))
         }
-      </div>
-    </section>
+      </p>
+      {/* todo: make links and image work */}
+    </main>
   )
 }

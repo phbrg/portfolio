@@ -1,50 +1,58 @@
 .NotFound {
   align-items: center;
   justify-content: center;
-  gap: 1vh 0;
-  padding: 5vh 5vw;
-  width: 100vw;
-  min-height: 100vh;
 
   & h1 {
-    font-size: 4vw;
-    font-weight: 400;
+    font-size: 9vw;
     color: var(--gray);
   }
 
   & h2 {
     font-size: 2vw;
-    font-weight: 300;
+    font-weight: 550;
 
     & span {
-      font-weight: 400;
-      color: var(--lgray);
+      font-weight: 600;
+      color: var(--green)
     }
   }
 
-  & .button {
+  & .btn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
     font-size: 1.2vw;
-    color: var(--blue);
-    text-decoration: 1px underline transparent;
-
-    &:hover {
-      text-decoration: 1px underline;
-    }
+    font-weight: 650;
+    background-color: var(--green);
+    color: #000;
+    padding: 11px 25px;
+    border-radius: 1000px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .NotFound {
     & h1 {
-      font-size: 5vh;
+      font-size: 8vh;
     }
-
+  
     & h2 {
-      font-size: 2.5vh;
-    }
-
-    & .button {
       font-size: 2vh;
+  
+      & span {
+        font-weight: 600;
+      }
+    }
+  
+    & .btn {
+      margin: 15px 0;
+      font-size: 1.6vh;
+      font-weight: 650;
+      background-color: var(--green);
+      color: #000;
+      padding: 9px 20px;
+      border-radius: 1000px;
     }
   }
 }

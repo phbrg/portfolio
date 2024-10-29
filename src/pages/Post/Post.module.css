@@ -1,75 +1,48 @@
 .Post {
-  justify-content: center;
-  gap: 1vh 0;
-  padding: 0 3vw;
-  width: 100vw;
-  min-height: 100vh;
-
+  gap: 15px 0;
   & header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
-    padding: 2vh 0;
 
     & h1 {
-      font-size: 1.6vw;
-      font-weight: 400;
-      color: var(--blue);
+      font-size: 1.4vw;
+      font-weight: 600;
+      color: var(--green);
     }
 
     & p {
+      font-size: 0.8vw;
+      font-weight: 400;
       color: var(--lgray);
-      font-weight: 350;
     }
   }
 
   & .body {
     font-size: 1vw;
-    font-weight: 300;
-  }
-
-  & img {
-    height: auto;
-    width: auto;
-  }
-
-  & .links {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    gap: 0 1vw;
-    width: 100%;
-    height: auto;
-
-    & a {
-      font-size: 1.1vw;
-      font-weight: 350;
-      text-decoration: 1px underline transparent;
-      color: var(--blue);
-
-      &:hover {
-        text-decoration: 1px underline;
-      }
-    }
+    font-weight: 350;
   }
 }
 
 @media screen and (max-width: 768px) {
   .Post {
+    padding: 0 3%;
+    gap: 1vh 0;
+
     & header {
       & h1 {
-        font-size: 2vh;
+        font-size: 1.6vh;
       }
 
       & p {
-        font-size: 1.4vh;
+        font-size: 1vh;
       }
     }
 
     & .body {
-      font-size: 1.5vh;
+      font-size: 1.1vh;
     }
   }
 }

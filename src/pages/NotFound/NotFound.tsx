@@ -1,28 +1,20 @@
-import { NavLink, useParams } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
+import s from './NotFound.module.css'
 
-import styles from './NotFound.module.css'
-
-import { languageManager } from '../../utils/language';
-
-export const NotFound = () => {
-  let { lang } = useParams();
-  const userLang = languageManager(lang);
-
+export const NotFound = (lang: any) => {
   return (
-    <section className={`def ${styles.NotFound}`}>
+    <main className={s.NotFound}>
       <h1>404</h1>
       <h2>
         {
-          userLang == 'eng' && <><span>ERROR:</span> Page Not Found.</> ||
-          userLang == 'pt' && <><span>ERRO:</span> Página não encontrada.</>
+          lang.lang == 'pt' && <><span>ERROR:</span> Página não encontrada.</> || <><span>ERROR:</span> Page not found.</>
         }
       </h2>
-      <NavLink to={`/${userLang}`} className={styles.button}>
-        {
-          userLang == 'eng' && <>Get back home</> ||
-          userLang == 'pt' && <>Voltar para home</>
-        }
+      <NavLink className={s.btn} to={`/${lang.lang}`}>
+      {
+        lang.lang == 'pt' && 'Retornar à página inicial' || 'Return to home page'
+      }
       </NavLink>
-    </section>
+    </main>
   )
 }
