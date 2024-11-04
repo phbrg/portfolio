@@ -19,7 +19,7 @@
     flex-direction: column;
     gap: 9px 0;
     padding: 0 0 0 1vw;
-    border-left: 2px solid var(--gray);
+    border-left: 2px solid var(--dgray);
     width: inherit;
 
     & div {
@@ -69,6 +69,7 @@
     }
 
     & .texts {
+      border-left: 2px solid var(--gray);
       & div {
         & h1 {
           color: var(--green);

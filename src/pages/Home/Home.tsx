@@ -24,8 +24,8 @@ export const Home = (lang: any) => {
       <div className={s.head}>
         <h1>
           {
-            lang.lang == 'pt' && <>Olá, eu sou o <span>Pedro Henrique</span> e sou um <br /> <span>Desenvolvedor FullStack & Estudante de Engenharia de Software</span>. 👨‍💻</> ||
-            <>Hey, I'm <span>Pedro Henrique</span> and I'm a <br /> <span>FullStack Developer & Software Engineering Student</span>. 👨‍💻</>
+            lang.lang == 'pt' && <>Olá, eu sou o <span>Pedro Henrique</span> e sou um <br /> <span>Desenvolvedor FullStack</span> & <span>Estudante de Engenharia de Software</span>. 👨‍💻</> ||
+            <>Hey, I'm <span>Pedro Henrique</span> and I'm a <br /> <span>FullStack Developer</span> & <span>Software Engineering Student</span>. 👨‍💻</>
           }
         </h1>
         <h2>
