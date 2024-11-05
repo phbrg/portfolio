@@ -8,6 +8,8 @@ import { Post } from "./pages/Post/Post"
 import { NotFound } from "./pages/NotFound/NotFound"
 
 import { Header } from "./components/Header/Header"
+import { Footer } from "./components/Footer/Footer"
+
 import { useEffect, useState } from "react"
 import { Tooltip } from "react-tooltip"
 
@@ -35,6 +37,7 @@ function App() {
           <Route path={`/${lang}/post/:postId`} element={<Post lang={lang} />} />
           <Route path={`/${lang}/*`} element={<NotFound lang={lang} />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   )

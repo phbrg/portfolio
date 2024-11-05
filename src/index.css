@@ -60,7 +60,7 @@ main {
   flex-direction: column;
   flex-wrap: wrap;
   width: 100vw;
-  min-height: 90vh;
+  min-height: 85vh;
   padding: 2% 15%;
 }
 

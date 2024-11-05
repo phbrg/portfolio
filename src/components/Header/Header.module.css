@@ -88,12 +88,12 @@
 
   & nav {
     gap: 0 9px !important;
-    padding: 4px !important;
+    padding: 6px !important;
     border-radius: 6px !important;
 
     & > * {
-      font-size: 1.29vh !important;
-      padding: 5px 8px !important;
+      font-size: 1.6vh !important;
+      padding: 6px 11px !important;
       border-radius: 3px !important;
     }
   }

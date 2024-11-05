@@ -1,7 +1,6 @@
 .Home {
   align-items: flex-start;
   justify-content: center;
-  min-height: 90vh;
 
   & > * {
     margin: 1% 0;
