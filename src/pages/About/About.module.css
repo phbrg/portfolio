@@ -54,3 +54,28 @@
     height: auto;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .About {
+    padding: 0 5%;
+
+    & .intro {
+      font-size: 0.9vh;
+    }
+
+    & .main {
+      gap: 10px;  
+      & h1 {
+        font-size: 1.4vh;
+      }
+
+      & h2 {
+        font-size: 1vh;
+      }
+
+      & div {
+        padding: 10px 0;
+      }
+    }
+  }
+}
