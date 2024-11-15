@@ -13,7 +13,7 @@
   
       & span {
         font-weight: 650;
-        color: var(--green);
+        color: var(--blue);
       }
     }
 
@@ -22,8 +22,11 @@
       font-size: 1.2vw;
       font-weight: 450;
       color: var(--lgray);
-      padding: 0 0 0 10px;
-      border-left: 4px solid var(--green);
+
+      & span {
+        color: var(--blue);
+        font-weight: 700;
+      }
     }
   
     & .subtexts {
@@ -34,36 +37,11 @@
       & p {
         display: flex;
         align-items: center;
-        font-size: 1vw;
-        color: var(--lgray);
-      }
-  
-      & .status {
-        gap: 0 7px;
-  
-        & .circleOut {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          height: 14px;
-          width: 14px;
-          border-radius: 1000px;
-          background-color: rgb(0, 0, 0);
-          animation: circleAnim 0.4s linear 1s infinite alternate;
-  
-          & .circleIn {
-            height: 8px;
-            width: 8px;
-            border-radius: 1000px;
-            background-color: var(--green);
-          }
-        }
-      }
-  
-      & .location {
+        font-size: 1.15vw;
+        font-weight: 500;
         gap: 0 5px;
         & > * {
-          color: var(--green);
+          color: var(--blue);
         }
       }
     }
@@ -75,9 +53,9 @@
     justify-content: flex-start;
     gap: 0 10px;
 
-    & .contact {
+    & .projects {
       background-color: #00000000;
-      border: 2px solid var(--gray);
+      border: 1px solid var(--gray);
       color: var(--text);
     }
 
@@ -89,14 +67,14 @@
       font-size: 1vw;
       font-weight: 550;
       background-color: #fff;
-      border: 2px solid #fff;
+      border: 1px solid #fff;
       color: #000;
       padding: 11px 25px;
       border-radius: 1000px;
 
       &:hover {
-        background-color: var(--green);
-        border: 2px solid var(--green);
+        background-color: var(--blue);
+        border: 1px solid var(--blue);
         color: #000;
       }
 
@@ -123,7 +101,6 @@
       border-radius: 8px;
 
       &:hover {
-        /* border: 1px solid var(--green); */
         background-color: var(--dgray);
       }
 
@@ -132,11 +109,6 @@
       }
     }
   }
-}
-
-@keyframes circleAnim {
-  0% { background-color: rgb(0, 0, 0); }
-  100% { background-color: rgba(0, 255, 47, 0.3); }
 }
 
 @media screen and (max-width: 768px) {
@@ -155,7 +127,7 @@
       & h2 {
         font-size: 1.29vh;
         padding: 0 0 0 5px;
-        border-left: 2px solid var(--green);
+        border-left: 2px solid var(--blue);
       }
     
       & .subtexts {
@@ -209,7 +181,7 @@
       border-radius: 8px;
 
       &:hover {
-        /* border: 1px solid var(--green); */
+        /* border: 1px solid var(--blue); */
         background-color: var(--dgray);
       }
 

@@ -11,7 +11,7 @@
 
   & .logo {
     font-size: 3vw;
-    color: var(--green);
+    color: var(--blue);
   }
 
   & .texts {
@@ -65,21 +65,21 @@
     background-color: var(--dgray);
 
     & .logo {
-      filter: drop-shadow(0 0 10px rgba(72, 230, 117, 0.5));
+      filter: drop-shadow(0 0 10px rgba(72, 125, 230, 0.5));
     }
 
     & .texts {
       border-left: 2px solid var(--gray);
       & div {
         & h1 {
-          color: var(--green);
+          color: var(--blue);
         }
       }
 
       & .tags {
         & p {
           & span {
-            color: var(--green);
+            color: var(--blue);
           }
         }
       }
@@ -103,7 +103,7 @@
       border-left: 1px solid var(--dgray);
       & div {
         & h1 {
-          color: var(--green);
+          color: var(--blue);
           font-size: 1.4vh;
 
           & span {

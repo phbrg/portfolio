@@ -1,0 +1,56 @@
+.About {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 30px;
+  
+  .intro {
+    font-family: Fira Code;
+    color: var(--lgray);
+    font-size: 0.8vw;
+    font-weight: 450;
+  }
+
+  & .main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 15px;
+
+    & h1 {
+      font-size: 1.5vw;
+      font-weight: 600;
+
+      & span {
+        font-weight: 650;
+        color: var(--blue);
+      }
+    }
+
+    & h2 {
+      font-size: 1vw;
+      font-weight: 450;
+      padding: 0 3px;
+      color: var(--lgray);
+
+      & span {
+        font-weight: 500;
+        color: var(--text);
+      }
+    }
+
+    & div {
+      padding: 0 0 15px 0;
+      border-bottom: 1px solid var(--dgray);
+    }
+  }
+
+  & .carrer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+}

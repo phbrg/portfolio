@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+::selection {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
 ::-webkit-scrollbar {
   background-color: transparent;
   width: 5px;
@@ -23,7 +27,7 @@
   --lgray: #acaab3;
   --gray: #45444c;
   --dgray: #202024;
-  --green: #48e675;
+  --blue: #3d83f4;
 }
 
 * {
@@ -68,8 +72,9 @@ main {
   font-family: Work Sans;
   font-weight: 500;
   font-size: 0.75vw;
-  background-color: var(--dgray);
+  background-color: var(--blue);
   padding: 10px;
+  border-radius: 4px;
 }
 
 .cardBox {

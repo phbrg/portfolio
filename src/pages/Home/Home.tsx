@@ -4,11 +4,12 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaFile } from "react-icons/fa";
 import { BsEnvelopeAtFill } from "react-icons/bs";
 import { FaArrowTrendUp } from "react-icons/fa6";
+import { FaSuitcase } from "react-icons/fa";
 
 import { toast } from "sonner";
+import { NavLink } from "react-router-dom";
 
 import s from './Home.module.css'
-import { NavLink } from "react-router-dom";
 
 export const Home = (lang: any) => {
   const handleOnClick = () => {
@@ -24,38 +25,38 @@ export const Home = (lang: any) => {
       <div className={s.head}>
         <h1>
           {
-            lang.lang == 'pt' && <>Olá, eu sou o <span>Pedro Henrique</span> e sou um <br /> <span>Desenvolvedor FullStack</span> & <span>Estudante de Engenharia de Software</span>. 👨‍💻</> ||
-            <>Hey, I'm <span>Pedro Henrique</span> and I'm a <br /> <span>FullStack Developer</span> & <span>Software Engineering Student</span>. 👨‍💻</>
+            lang.lang == 'pt' && <>Olá, eu sou o <span>Pedro Henrique</span> e sou um <br /> <span>Jovem Aprendiz</span> & <span>Estudante</span> de <span>Engenharia de Software</span>.</> ||
+            <>Hey, I'm <span>Pedro Henrique</span> and I'm a <br /> <span>Software Engineering Intern</span> & <span>Student</span>.</>
           }
         </h1>
         <h2>
           {
-            lang.lang == 'pt' && 'Tornando sonhos realidade com linhas de código.' ||
-            'Turning dreams into reality with code lines.'
+            lang.lang == 'pt' && <><span>&gt;_</span> Tornando sonhos realidade com linhas de código.</> ||
+            <><span>&gt;_</span> Turning dreams into reality with code lines.</>
           }
         </h2>
         <div className={s.subtexts}>
-          <p className={s.status}><span className={s.circleOut}><span className={s.circleIn}></span></span> Open to work</p>
-          <p className={s.location}><IoLocationSharp /> São Paulo, { lang.lang == 'pt' && 'Brasil' || 'Brazil' }</p>
+          <p><FaSuitcase />&nbsp;{ lang.lang == 'pt' && 'Jovem Aprendiz na Cognizant' || 'Intern at Cognizant' }</p>
+          <p><IoLocationSharp /> São Paulo, { lang.lang == 'pt' && 'Brasil' || 'Brazil' }</p>
         </div>
       </div>
       <div className={s.buttons}>
-          <NavLink className={s.projects} to={`/${lang.lang}/projects`}>
-          {
-            lang.lang == 'pt' && 'Ver projetos' || 'View projects'
-          }
-          <FaArrowTrendUp />
+          <NavLink to={`/${lang.lang}/about`}>
+            {
+              lang.lang == 'pt' && 'Conhecer mais' || 'Meet me'
+            }
+            <FaArrowTrendUp />
+          </NavLink >
+          <NavLink to={`/${lang.lang}/projects`} className={s.projects}>
+            {
+              lang.lang == 'pt' && 'Ver Projetos' || 'View Projects'
+            }
           </NavLink>
-          <p onClick={handleOnClick} className={s.contact}>
-          {
-            lang.lang == 'pt' && 'Vamos construir algo?' || "Let's build something?"
-          }
-          </p>
       </div>
       <div className={s.links}>
         <a data-tooltip-id='tooltip' data-tooltip-content='Github' data-tooltip-place="bottom"  className={s.link} href="https://github.com/phbrg" target="_blank"><FaGithub /></a>
         <a data-tooltip-id='tooltip' data-tooltip-content='Linkedin' data-tooltip-place="bottom"  className={s.link} href="https://www.linkedin.com/in/pedro-henrique-b-bergamin/" target="_blank"><FaLinkedin /></a>
-        <a data-tooltip-id='tooltip' data-tooltip-content='CV' data-tooltip-place="bottom"  className={s.link} 
+        <a data-tooltip-id='tooltip' data-tooltip-content={lang.lang == 'pt' ? 'Currículo' : 'CV'} data-tooltip-place="bottom"  className={s.link} 
         href={
             lang.lang == 'eng' && 'https://docs.google.com/document/d/1NG3ZsTAPb9_DWhIYmWiTevGYCRo5xsd_9uaHZUjROxY/edit?usp=sharing' || 
             'https://docs.google.com/document/d/1Xi74-yLk5FwePZGwjUK-6YRvXMjik-QamVtv3uLX3ls/edit?usp=sharing'

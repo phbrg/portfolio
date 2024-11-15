@@ -2,6 +2,7 @@ import { SiNestjs } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { FaBook } from "react-icons/fa";
+import { FaSuitcase } from "react-icons/fa";
 
 import s from './Card.module.css'
 
@@ -12,7 +13,8 @@ export const Card = (data: { title: string, logo: string, date: string, descript
         data.logo == 'nest' && <SiNestjs className={s.logo} /> || 
         data.logo == 'node' && <FaNodeJs className={s.logo} /> || 
         data.logo == 'react' && <FaReact className={s.logo} /> ||
-        data.logo == 'blog' && <FaBook className={s.logo} />
+        data.logo == 'blog' && <FaBook className={s.logo} /> ||
+        data.logo == 'job' && <FaSuitcase className={s.logo} />
       }
       <div className={s.texts}>
         <div>
@@ -22,7 +24,7 @@ export const Card = (data: { title: string, logo: string, date: string, descript
         <div className={s.tags}>
           {
             data.tags.map((tag, key) => (
-              <p className={s.tag} key={key}><span>#</span>{tag}</p>
+              tag == '' ? '' : <p className={s.tag} key={key}><span>#</span>{tag}</p>
             ))
           }
         </div>

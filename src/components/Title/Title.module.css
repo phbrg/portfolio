@@ -10,21 +10,20 @@
   & h1 {
     font-size: 2vw;
     font-weight: 600;
-    color: var(--green);
+    color: var(--blue);
   }
 
   & h2 {
     font-size: 1vw;
-    font-weight: 350;
+    font-weight: 400;
     color: var(--lgray);
 
     & a {
       font-size: 1vw;
-      font-weight: 350;
       text-decoration: underline;
 
       &:hover {
-        color: var(--green);
+        color: var(--blue);
       }
     }
   }

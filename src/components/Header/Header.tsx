@@ -10,14 +10,20 @@ export const Header = (lang: any) => {
     <header className={s.Header}>
       <NavLink to={`/${lang.lang}`} className={s.logo}>ph <AiOutlineBug /></NavLink>
       <nav>
-        <NavLink to={`/${lang.lang}`} className={s.btn}>Home</NavLink>
-        <NavLink to={`/${lang.lang}/projects`} className={s.btn}>
+        <NavLink to={`/${lang.lang}`} end className={({ isActive }) => isActive ? s.active : s.inactive}>Home</NavLink>
+        <NavLink to={`/${lang.lang}/about`} className={({ isActive }) => isActive ? s.active : s.inactive}>
+          {
+            lang.lang == 'pt' && 'Sobre' ||
+            lang.lang == 'eng' && 'About'
+          }
+        </NavLink>
+        <NavLink to={`/${lang.lang}/projects`} className={({ isActive }) => isActive ? s.active : s.inactive}>
           {
             lang.lang == 'pt' && 'Projetos' ||
             lang.lang == 'eng' && 'Projects'
           }
         </NavLink>
-        <NavLink to={`/${lang.lang}/blog`} className={s.btn}>Blog</NavLink>
+        <NavLink to={`/${lang.lang}/blog`} className={({ isActive }) => isActive ? s.active : s.inactive}>Blog</NavLink>
       </nav>
       <a
         data-tooltip-id='tooltip' 
