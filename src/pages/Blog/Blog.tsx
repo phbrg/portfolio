@@ -19,7 +19,7 @@ export const Blog = (lang: any) => {
           <>This page lists my blog posts. Click on the post to read</>
         }
         />
-      <div className='cardBox'>
+      <div className='cardBox reverse'>
         {
           posts.map((post) => (
             <Card 

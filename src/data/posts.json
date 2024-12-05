@@ -4,7 +4,7 @@
       "id": 1,
       "title": "My path throug coding",
       "date": "Feb, 2024",
-      "description": "How I started my coding journey and where I am now in my coding career.",
+      "description": "How I started and my journey to this point in programming.",
       "body": [
         "Hello world,",
         "I started my coding journey almost two years ago, in 2022, by creating game modifications with Lua. It was really fun, and at that time, I was only coding for hobby. Prior to 2022, I had never written a single line of code, but when I discovered that I could modify and create my own things with code, I was amazed.",
@@ -13,7 +13,22 @@
         "I didn't learn much at school because the teaching was very weak, but I started researching coding more, exploring what I could become and what coding careers I could pursue. Initially, I thought I wanted to be a front-end developer, building beautiful and large websites. However, when I discovered back-end development and Node.js, I abandoned the idea of becoming a front-end developer and just focused on back-end development with it.",
         "Currently, I have learned Node.js and built some projects with it. I have also learned and built projects with React.js (a front-end JavaScript framework). I am now learning Nest and some other technologies like Docker and Jest."
       ],
-      "tags": ["Tech", "History"],
+      "tags": [],
+      "links": [],
+      "image": null
+    },
+    {
+      "id": 1,
+      "title": "My first job",
+      "date": "Dec, 2024",
+      "description": "How I got my first job and what my experience there has been like.",
+      "body": [
+        "Hello world,",
+        "Recently, I started my professional journey with my first job, and it has been an incredible experience! I had the opportunity to join Cognizant, one of the largest and most renowned companies in the technology market, as a Young Apprentice. Currently, I work in technical support, but I have big dreams and ambitions within the organization. The support I’ve received from the company has been exceptional, and I’m very pleased with the environment and the opportunities offered.",
+        "My journey began at the end of last month, along with the selection process. Although brief, the process was quite thorough: I participated in approximately four stages, including interviews with the Human Resources department, managers, and general alignment meetings. After being approved, we went through an integration period that included onboarding and a week of training at Instituto Ser+ — a government-mandated program aimed at training young apprentices. This stage was an excellent opportunity to get to know my colleagues better, build new friendships, and strengthen the team spirit.",
+        "Currently, I am part of a team with two other colleagues, and we are excited to officially start our activities. Meanwhile, we are dedicating ourselves to preparing for this journey by participating in online classes, taking courses, and continuously improving our skills. I am immensely grateful for this opportunity and hope to contribute with excellence to the company’s success."
+      ],
+      "tags": [],
       "links": [],
       "image": null
     }
@@ -32,7 +47,23 @@
         "Não aprendi muito na escola porque o ensino era muito fraco, mas comecei a pesquisar mais sobre programação, explorando o que eu poderia me tornar e quais carreiras em programação eu poderia seguir. Inicialmente, pensei em ser um desenvolvedor front-end, construindo sites grandes e bonitos. No entanto, quando descobri o desenvolvimento back-end e o Node.js, abandonei a ideia de me tornar um desenvolvedor front-end e me concentrei apenas no back-end com ele.",
         "Atualmente, aprendi Node.js e construí alguns projetos com ele. Também aprendi e construí projetos com React.js (um framework front-end de JavaScript). Agora estou aprendendo Nest e algumas outras tecnologias como Docker e Jest."
       ],
-      "tags": ["Tech", "Historia"],
+      "tags": [],
+      "links": [],
+      "image": null
+    },
+    {
+      "id": 2,
+      "title": "Meu primeiro emprego",
+      "date": "Dez, 2024",
+      "description": "Como eu consegui e como está sendo minha experiência no meu primeiro emprego.",
+       "body": [
+        "Hello world,",
+        "Recentemente, iniciei minha trajetória profissional no meu primeiro emprego, e tem sido uma experiência incrível! Tive a oportunidade de ingressar na Cognizant, uma das maiores empresas e referência no mercado de tecnologia, como Jovem Aprendiz. Atualmente, atuo como suporte técnico, mas tenho grandes sonhos e ambições dentro da organização. O suporte que recebo da empresa tem sido excepcional, e estou muito satisfeito com o ambiente e as oportunidades oferecidas.",
+        "Minha jornada começou no final do mês passado, juntamente com o processo seletivo. Apesar de curto, o processo foi bastante completo: participei de aproximadamente quatro etapas, incluindo entrevistas com o setor de Recursos Humanos, gestores e alinhamentos gerais. Após a aprovação, passamos por um período de integração, que incluiu o onboarding e uma semana de capacitação no Instituto Ser+ — um programa obrigatório do governo voltado à formação de jovens aprendizes. Essa etapa foi uma excelente oportunidade para conhecer melhor meus colegas de trabalho, desenvolver novas amizades e fortalecer o espírito de equipe.",
+        "Atualmente, faço parte de uma equipe com outros dois colegas, e estamos ansiosos para começar, de fato, nossas atividades. Enquanto isso, estamos nos dedicando à preparação para essa jornada, participando de aulas online, realizando cursos e nos capacitando continuamente. Sou imensamente grato por essa oportunidade e espero contribuir com excelência para o sucesso da empresa."
+        
+      ],
+      "tags": [],
       "links": [],
       "image": null
     }

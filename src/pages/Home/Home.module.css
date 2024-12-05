@@ -154,19 +154,10 @@
   }
 
   & .buttons {
-    & .projects {
+    & > * {
       gap: 0 10px;
       font-size: 1.4vh !important;
       font-weight: 650 !important;
-      padding: 8px 20px !important;
-    }
-
-    & .contact {
-      gap: 0 10px;
-      font-size: 1.4vh !important;
-      font-weight: 650 !important;
-      background-color: #00000000;
-      border: 1px solid #fff !important;
       padding: 8px 20px !important;
     }
   }

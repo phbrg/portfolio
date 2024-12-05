@@ -6,7 +6,7 @@ import { FaSuitcase } from "react-icons/fa";
 
 import s from './Card.module.css'
 
-export const Card = (data: { title: string, logo: string, date: string, description: any, tags: string[], link: string, blank: boolean }) => {
+export const Card = (data: { title: any, logo: string, date: string, description: any, tags: string[], link: string, blank: boolean }) => {
   return (
     <a target={data.blank ? '_blank' : '_self'} href={data.link} className={s.Card}>
       {
