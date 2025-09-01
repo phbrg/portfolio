@@ -58,8 +58,8 @@ export const Home = (lang: any) => {
         <a data-tooltip-id='tooltip' data-tooltip-content='Linkedin' data-tooltip-place="bottom"  className={s.link} href="https://www.linkedin.com/in/pedro-henrique-b-bergamin/" target="_blank"><FaLinkedin /></a>
         <a data-tooltip-id='tooltip' data-tooltip-content={lang.lang == 'pt' ? 'Currículo' : 'CV'} data-tooltip-place="bottom"  className={s.link} 
         href={
-            lang.lang == 'eng' && 'https://docs.google.com/document/d/1NG3ZsTAPb9_DWhIYmWiTevGYCRo5xsd_9uaHZUjROxY/edit?usp=sharing' || 
-            'https://docs.google.com/document/d/1Xi74-yLk5FwePZGwjUK-6YRvXMjik-QamVtv3uLX3ls/edit?usp=sharing'
+            lang.lang == 'eng' && 'https://docs.google.com/document/d/1aVV1x9CODxOPlFv7auVmbeONCuJe41ZmMJuVrC0MMdk/edit?usp=sharing' || 
+            'https://docs.google.com/document/d/1VjwgN47X7yN2JsFqs6ubgZW4ujZw1FlYHNaBTkr-No0/edit?usp=sharing'
           } target="_blank"><FaFile /></a>
         <a onClick={handleOnClick} data-tooltip-id='tooltip' data-tooltip-content='Email' data-tooltip-place="bottom"  className={s.link}><BsEnvelopeAtFill /></a>
       </div>
