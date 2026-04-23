@@ -1,0 +1,125 @@
+.LinkList {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+  padding: 0;
+
+  & .link {
+    border-top: 1px solid var(--bgComponents);
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    & .linkHeader {
+      display: flex;
+      justify-content: space-between;
+
+      & h3 {
+        font-size: 1.4vw;
+        font-weight: 500;
+      }
+
+      & p {
+        font-size: 0.85vw;
+        font-weight: 450;
+        color: var(--darkText);
+      }
+    }
+
+    & .description {
+      font-size: 0.95vw;
+      font-weight: 400;
+      color: var(--g2);
+    }
+
+    & .tags {
+      display: flex;
+      gap: 10px;
+
+      & p {
+        font-size: 0.85vw;
+        font-weight: 400;
+        background-color: rgba(255, 255, 255, 0.05);
+        padding: 3px 12px;
+        border-radius: 100px;
+      }
+    }
+
+    &:hover {
+      background-color: var(--bgComponents);
+    }
+
+    &:active {
+      & > * {
+        transform: scale(0.99);
+      }
+    }
+
+    &:first-child {
+      border-top: none;
+      border-radius: 16px 16px 0 0;
+    }
+
+    &:last-child {
+      border-radius: 0 0 16px 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .LinkList {
+    margin-top: 15px;
+    padding: 0;
+
+    & .link {
+      padding: 2.5%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      & .linkHeader {
+        display: flex;
+        justify-content: space-between;
+
+        & h3 {
+          font-size: 2vh;
+          font-weight: 550;
+        }
+
+        & p {
+          font-size: 1.4vh;
+          font-weight: 450;
+          color: var(--darkText);
+        }
+      }
+
+      & .description {
+        font-size: 1.2vh;
+        font-weight: 450;
+        color: var(--g2);
+      }
+
+      & .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+
+        & p {
+          font-size: 1vh;
+          font-weight: 450;
+          padding: 3px 7px;
+        }
+      }
+
+      &:first-child {
+        border-radius: 10px 10px 0 0;
+      }
+
+      &:last-child {
+        border-radius: 0 0 10px 10px;
+      }
+    }
+}
+}

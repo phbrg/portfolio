@@ -1,0 +1,11 @@
+.About {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .About {
+    padding: var(--rpadding);
+  }
+}

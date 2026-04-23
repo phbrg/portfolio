@@ -1,0 +1,23 @@
+.Footer {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  top: 95vh;
+  width: 100%;
+
+  & * {
+    font-size: 0.7vw;
+    font-weight: 500;
+    color: var(--g3);
+  }
+
+  & *::selection {
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Footer {
+    display: none;
+  }
+}

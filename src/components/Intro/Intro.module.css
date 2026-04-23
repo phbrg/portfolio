@@ -1,0 +1,98 @@
+.Intro {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  gap: 12px;
+  margin-top: 2vh;
+
+  & .link {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 10px;
+
+    & > * {
+      color: var(--darkText);
+    }
+
+    & .ReturnIcon {
+      font-size: 1vw;
+      stroke-width: 2.5px;
+    }
+
+    & p {
+      font-size: 1.1vw;
+      font-weight: 450;
+    }
+
+    &:hover {
+      & > * {
+        color: var(--g2);
+      }
+    }
+
+    &:active {
+      & > * {
+        color: var(--g3);
+      }
+    }
+  }
+
+   & .textsWrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+
+    & h3 {
+      font-size: 2vw;
+      font-weight: 600;
+    }
+
+    & p {
+      font-size: 1vw;
+      font-weight: 400;
+      color: var(--g2);
+
+      & a {
+        color: var(--g2);
+        text-decoration: underline;
+
+        &:hover {
+          color: var(--text);
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .Intro {
+    .link {
+      gap: 5px;
+
+      & .ReturnIcon {
+        font-size: 1.8vh;
+      }
+
+      & p {
+        font-size: 2vh;
+      }
+    }
+
+    & .textsWrapper {
+      & h3 {
+        font-size: 3vh;
+      }
+        
+      & p {
+        font-size: 1.8vh;
+      }
+    }
+  }
+}

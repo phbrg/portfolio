@@ -1,0 +1,34 @@
+.Header {
+  position: absolute;
+  top: 1%;
+  left: 96.7%;
+
+  & a {
+    font-size: 0.8vw;
+    font-weight: 550;
+    color: var(--g2);
+
+    &:hover {
+      color: var(--text);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+
+  & *::selection {
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Header {
+    position: absolute;
+    top: 1%;
+    left: 88%;
+    & a {
+      font-size: 1.4vh;
+    }
+  }
+}

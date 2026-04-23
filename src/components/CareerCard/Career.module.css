@@ -1,0 +1,119 @@
+.Career {
+  & .header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    & h3 {
+      font-size: 1.4vw;
+      font-weight: 450;
+      color: var(--g2);
+    }
+
+    & span {
+      display: flex;
+      font-size: 1.2vw;
+      color: var(--g2);
+    }
+  }
+
+  & .role {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5vh 0;
+    gap: 15px;
+
+    & .roleHeader {
+      display: flex;
+      justify-content: space-between;
+
+      & div {
+        & h4 {
+          font-size: 1.5vw;
+          font-weight: 550;
+        }
+      }
+
+      & p {
+          font-size: 0.9vw;
+          font-weight: 450;
+          color: var(--darkText);
+        }
+    }
+
+    & ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 0 0 0 1.5vw;
+
+      & li {
+        font-size: 1vw;
+        font-weight: 350;
+        color: var(--g2);
+
+        & span {
+          color: var(--g2);
+          font-weight: 500;
+        }
+
+        &::marker {
+          color: var(--g3);
+        }
+      }
+    }
+  }
+
+  & .borderTop {
+    border-top: 1px solid var(--border);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Career {
+    & .header {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      & h3 {
+        font-size: 2.2vh;
+      }
+
+      & span {
+        font-size: 1.8vh;
+      }
+    }
+
+    & .role {
+      padding: 1.4vh 0;
+
+      & .roleHeader {
+        flex-direction: column;
+        & div {
+          & h4 {
+            font-size: 2.3vh;
+            font-weight: 550;
+          }
+        }
+
+        & p {
+            font-size: 1.4vh;
+          }
+      }
+
+      & ul {
+        gap: 10px;
+        padding: 0 0 0 2vh;
+
+        & li {
+          font-size: 1.6vh;
+          font-weight: 350;
+
+          & span {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

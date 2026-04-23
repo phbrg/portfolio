@@ -1,0 +1,19 @@
+.Contact {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  & .btnWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 15px;
+    /* background-color: red; */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Contact {
+    gap: 15px;
+  }
+}
