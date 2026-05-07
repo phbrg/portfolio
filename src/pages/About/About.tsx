@@ -13,8 +13,8 @@ export const About = (language: any) => {
           }
         description={
           lang == 'eng' ? 
-          <>I’m a FullStack Developer passionate about technology and programming. I really like the Node.js ecosystem, especially technologies such as React.js and NestJS. Despite this, I venture into other technologies, mainly at college, where I develop projects mainly in Java and Python for backend and data analysis.<br/><br/>I am currently starting a new position as a SAP ABAP assistant at Cognizant, a new experience where I look forward to learning a lot.</> : 
-          <>Sou um Desenvolvedor FullStack apaixonado por tecnologia e programação. Gosto muito do ecossistema Node.js, com foco especial em tecnologias como React.js e NestJS. Além disso, costumo me aventurar em outras ferramentas, principalmente na faculdade, onde desenvolvo projetos principalmente em Java e Python voltados para backend e análise de dados.<br/><br/>Atualmente, estou iniciando em um novo cargo de Assistente SAP ABAP na Cognizant, uma nova experiência onde pretendo aprender muito.</>
+          <>I’m a FullStack Developer passionate about technology and programming. I really like the Node.js ecosystem, especially technologies such as React.js and NestJS. Despite this, I venture into other technologies, mainly at college, where I develop projects mainly in Java and Python for backend and data analysis.<br/><br/>I am currently starting a new position as a SAP ABAP Analyst at Cognizant, a new experience where I look forward to learning a lot.</> : 
+          <>Sou um Desenvolvedor FullStack apaixonado por tecnologia e programação. Gosto muito do ecossistema Node.js, com foco especial em tecnologias como React.js e NestJS. Além disso, costumo me aventurar em outras ferramentas, principalmente na faculdade, onde desenvolvo projetos principalmente em Java e Python voltados para backend e análise de dados.<br/><br/>Atualmente, estou iniciando em um novo cargo de Analista SAP ABAP na Cognizant, uma nova experiência onde pretendo aprender muito.</>
         }
         language={lang}
       />
@@ -22,7 +22,7 @@ export const About = (language: any) => {
         roles={[
           {
             id: 1,
-            title: lang == 'pt' ? 'Assistente SAP ABAP Júnior' : 'SAP ABAP assistant',
+            title: lang == 'pt' ? 'Analista SAP ABAP Júnior' : 'SAP ABAP analyst',
             company: 'Cognizant',
             date: lang == 'pt' ? 'Abr. 2026 - Presente' : 'Apr. 2026 - Current',
           },
