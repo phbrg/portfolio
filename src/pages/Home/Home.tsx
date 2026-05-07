@@ -12,8 +12,8 @@ export const Home = (language: any) => {
         <h1>Pedro H. Bergamin</h1>
         <h2>{
           lang == 'eng' ? 
-          <>SAP ABAP assistant @Cognizant & Software Engineering Student @FIAP</> :
-          <>Assistente SAP ABAP @Cognizant & Estudante de Engenharia de Software @FIAP</>
+          <>SAP ABAP analyst @Cognizant & Software Engineering Student @FIAP</> :
+          <>Analista SAP ABAP @Cognizant & Estudante de Engenharia de Software @FIAP</>
         }</h2>
       </div>
       <div className={s.buttonsWrapper}>
