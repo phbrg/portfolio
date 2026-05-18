@@ -20,6 +20,15 @@ export const Projects = (language: any) => {
           {
             id: 1,
             type: 'a',
+            link: 'https://github.com/phbrg/zen-type',
+            title: 'Zen Type',
+            date: lang == 'pt' ? 'Mai. 2023' : 'May. 2023',
+            description: lang == 'pt' ? 'Um clone minimalista do MonkeyType focado na língua portuguesa. Feito com AI.' : 'A minimalist clone of MonkeyType focused on the Portuguese language. Built with AI.',
+            tags: ['React.js', 'TypeScript', 'Tailwind', 'AI']
+          },
+          {
+            id: 2,
+            type: 'a',
             link: 'https://github.com/phbrg/sabaraapi',
             title: 'SabaraAPI',
             date: 'Jun. 2025',
@@ -27,7 +36,7 @@ export const Projects = (language: any) => {
             tags: ['Restful API', 'Python', 'FastAPI', 'PostgreSQL', 'SQLAlchemy']
           },
           {
-            id: 2,
+            id: 3,
             type: 'a',
             link: 'https://github.com/phbrg/shift-news',
             title: 'ShiftNews',
@@ -36,7 +45,7 @@ export const Projects = (language: any) => {
             tags: ['Restful API', 'NestJs', 'Prisma', 'PostgreSQL', 'TypeScript']
           },
           {
-            id: 3,
+            id: 4,
             type: 'a',
             link: 'https://github.com/phbrg/arkadius',
             title: 'Arkadius',
@@ -45,7 +54,7 @@ export const Projects = (language: any) => {
             tags: ['MVC', 'Node.js', 'Sequelize.js', 'PostgreSQL', 'JavaScript']
           },
           {
-            id: 4,
+            id: 5,
             type: 'a',
             link: 'https://github.com/phbrg/cashflow',
             title: 'Cashflow',
