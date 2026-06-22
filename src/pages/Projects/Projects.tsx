@@ -20,14 +20,23 @@ export const Projects = (language: any) => {
           {
             id: 1,
             type: 'a',
-            link: 'https://github.com/phbrg/zen-type',
-            title: 'Zen Type',
-            date: lang == 'pt' ? 'Mai. 2023' : 'May. 2023',
-            description: lang == 'pt' ? 'Um clone minimalista do MonkeyType focado na língua portuguesa. Feito com AI.' : 'A minimalist clone of MonkeyType focused on the Portuguese language. Built with AI.',
-            tags: ['React.js', 'TypeScript', 'Tailwind', 'AI']
+            link: 'https://github.com/phbrg/c-finance',
+            title: 'C-Finance',
+            date: 'Jun. 2026',
+            description: lang == 'pt' ? 'Dashboard local-first de controle financeiro com projeções, análises e backup em JSON. Focado em privacidade, seus dados ficam com você.' : 'A local-first financial management dashboard with projections, analyses, and JSON backups, designed with privacy in mind—your data stays with you.',
+            tags: ['React.js', 'TypeScript', 'Tailwind CSS', 'AI Agents']
           },
           {
             id: 2,
+            type: 'a',
+            link: 'https://github.com/phbrg/zen-type',
+            title: 'Zen Type',
+            date: lang == 'pt' ? 'Mai. 2026' : 'May. 2026',
+            description: lang == 'pt' ? 'Um clone minimalista do MonkeyType focado na língua portuguesa. Feito com AI.' : 'A minimalist clone of MonkeyType focused on the Portuguese language. Built with AI.',
+            tags: ['React.js', 'TypeScript', 'Tailwind CSS', 'AI']
+          },
+          {
+            id: 3,
             type: 'a',
             link: 'https://github.com/phbrg/sabaraapi',
             title: 'SabaraAPI',
@@ -36,7 +45,7 @@ export const Projects = (language: any) => {
             tags: ['Restful API', 'Python', 'FastAPI', 'PostgreSQL', 'SQLAlchemy']
           },
           {
-            id: 3,
+            id: 4,
             type: 'a',
             link: 'https://github.com/phbrg/shift-news',
             title: 'ShiftNews',
@@ -45,7 +54,7 @@ export const Projects = (language: any) => {
             tags: ['Restful API', 'NestJs', 'Prisma', 'PostgreSQL', 'TypeScript']
           },
           {
-            id: 4,
+            id: 5,
             type: 'a',
             link: 'https://github.com/phbrg/arkadius',
             title: 'Arkadius',
@@ -54,7 +63,7 @@ export const Projects = (language: any) => {
             tags: ['MVC', 'Node.js', 'Sequelize.js', 'PostgreSQL', 'JavaScript']
           },
           {
-            id: 5,
+            id: 6,
             type: 'a',
             link: 'https://github.com/phbrg/cashflow',
             title: 'Cashflow',

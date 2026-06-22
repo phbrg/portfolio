@@ -38,7 +38,7 @@ function App() {
           <Route path={`/${lang}/contact`} element={<Contact lang={lang} />} />
           <Route path={`/${lang}/*`} element={<NotFound lang={lang} />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </>
   )
